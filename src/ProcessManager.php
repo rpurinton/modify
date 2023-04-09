@@ -62,7 +62,7 @@ class ProcessManager
 			}
 		}
 		foreach ($ps2 as $line) {
-			$line = str_replace("  ", " ", $line);
+			$line = $this->replace("  ", " ", $line);
 			$line = explode(" ", $line);
 			$ps3[] = intval($line[1]);
 		}
@@ -141,5 +141,13 @@ class ProcessManager
 			passthru("modify main");
 			sleep(1);
 		}
+	}
+
+	private function replace(string $search, string $replace, string $subject): string
+	{
+		while (strpos($subject, $search) !== false) {
+			$subject = str_replace($search, $replace, $subject);
+		}
+		return $subject;
 	}
 }

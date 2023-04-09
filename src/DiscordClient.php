@@ -62,7 +62,7 @@ class DiscordClient extends ConfigLoader
 	 * @param array $message The incoming message.
 	 * @param \Discord\Discord $discord The Discord client instance.
 	 */
-	private function inbox(array $message, \Discord\Discord $discord): void
+	private function inbox($message, \Discord\Discord $discord): void
 	{
 		$this->bunny->publish("modify_inbox", $message);
 	}

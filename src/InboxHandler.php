@@ -53,7 +53,7 @@ class InboxHandler extends ConfigLoader
 						isset($results["results"][0]["flagged"]) &&
 						$results["results"][0]["flagged"]
 					) {
-						$message["modify_results"] = $results;
+						$messaged["modify_results"] = $results;
 						$this->delete_message($messaged);
 					}
 				}

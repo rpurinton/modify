@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1);
-
 namespace RPurinton\Modify;
+
+require_once(__DIR__ . "/vendor/autoload.php");
 
 /**
  * Class ConfigLoader

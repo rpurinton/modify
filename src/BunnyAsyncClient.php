@@ -94,7 +94,7 @@ class BunnyAsyncClient extends ConfigLoader
 	 * @param string $queue
 	 * @param array<mixed> $data
 	 */
-	public function publish(string $queue, array $data)
+	public function publish(string $queue, $data)
 	{
 		$this->channel->publish(json_encode($data, JSON_PRETTY_PRINT), [], '', $queue);
 	}

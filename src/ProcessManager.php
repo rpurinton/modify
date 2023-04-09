@@ -105,7 +105,7 @@ class ProcessManager
 	{
 		$pids = $this->getPids();
 		foreach ($pids as $pid) {
-			posix_kill($pid, SIGTERM);
+			posix_kill(intval($pid), SIGTERM);
 		}
 		$this->status();
 	}
@@ -117,7 +117,7 @@ class ProcessManager
 	{
 		$pids = $this->getPids();
 		foreach ($pids as $pid) {
-			posix_kill($pid, SIGKILL);
+			posix_kill(intval($pid), SIGKILL);
 		}
 		$this->status();
 	}

@@ -13,9 +13,9 @@ Just add our bot to your discord server using [this link](https://discord.com/ap
 5. Create a RabbitMQ user/password
 6. Create queues named `modify_inbox` and `modify_outbox`
 7. `git clone https://github.com/rpurinton/modify.git <install-dir>`
-8. Edit the files in <install-dir>/src/conf.d/
-9. Create a CRON job to <install-dir>/src/cron.d/logrotate.php
-10. ln -s <install-dir>/modify /usr/bin/modify
+8. Edit the files in `<install-dir>/src/conf.d/`
+9. Create a CRON job to `<install-dir>/src/cron.d/logrotate.php`
+10. `ln -s <install-dir>/modify /usr/bin/modify`
 
 ### Commands
 `modify start`

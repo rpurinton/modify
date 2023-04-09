@@ -64,7 +64,7 @@ class ProcessManager
 		foreach ($ps2 as $line) {
 			$line = str_replace("  ", " ", $line);
 			$line = explode(" ", $line);
-			$ps3[] = $line[1];
+			$ps3[] = intval($line[1]);
 		}
 		return $ps3;
 	}
@@ -105,7 +105,7 @@ class ProcessManager
 	{
 		$pids = $this->getPids();
 		foreach ($pids as $pid) {
-			posix_kill(intval($pid), SIGTERM);
+			posix_kill($pid, SIGTERM);
 		}
 		$this->status();
 	}
@@ -117,7 +117,7 @@ class ProcessManager
 	{
 		$pids = $this->getPids();
 		foreach ($pids as $pid) {
-			posix_kill(intval($pid), SIGKILL);
+			posix_kill($pid, SIGKILL);
 		}
 		$this->status();
 	}

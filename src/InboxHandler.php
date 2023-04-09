@@ -1,14 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RPurinton\Modify;
 
 require_once(__DIR__ . "/BunnyAsyncClient.php");
 
+/**
+ * Class InboxHandler
+ *
+ * This class extends ConfigLoader and handles incoming messages from a queue.
+ */
 class InboxHandler extends ConfigLoader
 {
-	private $sql = null;
+
+	/**
+	 * @var BunnyAsyncClient|null
+	 */
 	private $bunny = null;
-	function __construct()
+
+	/**
+	 * InboxHandler constructor.
+	 *
+	 * Initializes the BunnyAsyncClient and starts the event loop.
+	 */
+	public function __construct()
 	{
 		parent::__construct();
 		$loop = \React\EventLoop\Loop::get();
@@ -16,7 +32,13 @@ class InboxHandler extends ConfigLoader
 		$loop->run();
 	}
 
-	private function process($message)
+	/**
+	 * Processes incoming messages from the queue.
+	 *
+	 * @param array $message The incoming message from the queue.
+	 * @return bool Returns true if the message was processed successfully.
+	 */
+	private function process(array $message): bool
 	{
 		switch ($message["t"]) {
 			case "MESSAGE_CREATE":
@@ -39,7 +61,13 @@ class InboxHandler extends ConfigLoader
 		return true;
 	}
 
-	private function evaluate($text)
+	/**
+	 * Evaluates the content of a message using the OpenAI API.
+	 *
+	 * @param string $text The content of the message to be evaluated.
+	 * @return array The results of the evaluation.
+	 */
+	private function evaluate(string $text): array
 	{
 		$header[] = "Content-Type: application/json";
 		$header[] = "Authorization: Bearer " . $this->config["openai"]["token"];
@@ -54,7 +82,13 @@ class InboxHandler extends ConfigLoader
 		return json_decode($result, true);
 	}
 
-	private function delete_message($message)
+	/**
+	 * Deletes a message from the queue.
+	 *
+	 * @param array $message The message to be deleted from the queue.
+	 * @return bool Returns true if the message was deleted successfully.
+	 */
+	private function delete_message(array $message): bool
 	{
 		$message["function"] = "MESSAGE_DELETE";
 		$this->bunny->publish("modify_outbox", $message);

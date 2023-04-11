@@ -6,6 +6,8 @@ Modify is a free Discord bot that uses AI to detect and remove harmful messages 
 Just add our bot to your discord server using [this link](https://discord.com/api/oauth2/authorize?client_id=1094509798277529702&permissions=9216&scope=bot)
 
 ## Option 2: Run Your Own Bot (Harder)
+Note: This bot is a CLI application and so will not run through a web server.  You will need command-line root access to your linux server to be able to install PHP and RabbitMQ.
+
 1. Create a new app and bot in the Discord Developers Portal.
 2. Install Linux with PHP 8.2+ ZTS 
 3. Install/Compile the parallel extension for PHP

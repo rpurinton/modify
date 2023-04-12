@@ -1,0 +1,6 @@
+modify stop
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
+git pull
+chown -R apache:apache .
+modify start

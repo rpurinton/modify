@@ -20,7 +20,8 @@ Note: This bot is a CLI application and so will not run through a web server.  Y
 10. `ln -s <install-dir>/modify /usr/bin/modify`
 
 ### Commands
-`modify start`
-`modify stop`
-`modify restart`
-`modify status`
+`modify start`,
+`modify stop`,
+`modify restart`,
+`modify status`,
+`modify kill`.

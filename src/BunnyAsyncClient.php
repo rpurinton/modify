@@ -94,8 +94,21 @@ class BunnyAsyncClient extends ConfigLoader
 	 * @param string $queue
 	 * @param array<mixed> $data
 	 */
-	public function publish(string $queue, $data)
+	public function publish($queue, $data)
 	{
-		$this->channel->publish(json_encode($data, JSON_PRETTY_PRINT), [], '', $queue);
+		$json_string = json_encode($data);
+		$descriptorspec = array(
+			0 => array("pipe", "r"),
+			1 => array("pipe", "w"),
+			2 => array("pipe", "w")
+		);
+		$process = proc_open(__DIR__ . "/publish.php '$queue'", $descriptorspec, $pipes);
+		if (is_resource($process)) {
+			fwrite($pipes[0], $json_string);
+			fclose($pipes[0]);
+			fclose($pipes[1]);
+			fclose($pipes[2]);
+			proc_close($process);
+		}
 	}
 }

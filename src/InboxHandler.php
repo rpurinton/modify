@@ -44,7 +44,7 @@ class InboxHandler extends ConfigLoader
 			case "MESSAGE_CREATE":
 			case "MESSAGE_UPDATE":
 				$messaged = $message["d"];
-				if (isset($messaged["content"])) {
+				if (isset($messaged["content"]) && !$messaged["author"]["bot"]) {
 					$results = $this->evaluate($messaged["content"]);
 					if (
 						is_array($results) &&

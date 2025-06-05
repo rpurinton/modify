@@ -20,7 +20,6 @@ export default async function (message) {
         if (!text && imageUrls.length === 0) return;
 
         // Moderation results array
-        let moderationResults = [];
         const moderationPromises = [];
 
         // Moderate text (if present)
@@ -42,63 +41,44 @@ export default async function (message) {
 
         // Await all moderation requests in parallel
         const moderationResultsRaw = await Promise.all(moderationPromises);
-        moderationResults = moderationResultsRaw.filter(Boolean);
+        const moderationResults = moderationResultsRaw.filter(Boolean);
 
-        // Aggregate flagged results
-        let textFlagged = [];
-        let imageFlagged = [];
-        moderationResults.forEach(({ moderation, type, text, url }) => {
-            const flagged = moderation.results.filter(r => r.flagged).map(r => ({ result: r, type, text, url }));
-            if (type === 'text') textFlagged.push(...flagged);
-            else if (type === 'image') imageFlagged.push(...flagged);
-        });
-        if (textFlagged.length === 0 && imageFlagged.length === 0) return;
-
+        // Send a separate alert for each violation (text or image)
         const logChannelId = global.logChannels[message.guild.id];
         const categoryNames = getMsg(global.guildLocales?.[message.guild.id], 'categories', {});
-        let violations = [];
-        if (textFlagged.length > 0) {
-            const { result, text } = textFlagged[0];
-            const cats = Object.entries(result.categories || {})
-                .filter(([cat, val]) => val)
-                .map(([cat]) => {
-                    const score = result.category_scores?.[cat] || 0;
-                    const name = categoryNames[cat] || cat;
-                    return `• **${name}**: ${(score * 100).toFixed(1)}%`;
-                })
-                .join("\n");
-            let context = text ? text.substring(0, 300) : '(no text)';
-            violations.push(`**Flagged Text:**\n${context}\n${cats}`);
-        }
-        imageFlagged.forEach(({ result, url }, idx) => {
-            const cats = Object.entries(result.categories || {})
-                .filter(([cat, val]) => val)
-                .map(([cat]) => {
-                    const score = result.category_scores?.[cat] || 0;
-                    const name = categoryNames[cat] || cat;
-                    return `• **${name}**: ${(score * 100).toFixed(1)}%`;
-                })
-                .join("\n");
-            let context = `[Image ${idx + 1}](${url})`;
-            violations.push(`**Flagged Image ${imageFlagged.length > 1 ? `#${idx + 1}` : ''}:**\n${context}\n${cats}`);
-        });
-        violations = violations.join("\n\n");
-
-        const embed = new EmbedBuilder()
-            .setColor(0xED4245)
-            .setTitle(message.url + ` • <t:${Math.floor(Date.now() / 1000)}:R>`)
-            .setDescription(`<@${message.author.id}>\n${violations}`)
-            .setTimestamp(message.createdAt)
-            .setFooter({ text: `User: ${message.author.tag} (${message.author.id})` });
-        if (imageUrls.length > 0) {
-            embed.setImage(imageUrls[0]);
-            if (imageUrls.length > 1) {
-                embed.addFields({ name: "Images", value: imageUrls.slice(1).map((u, i) => `[Image ${i + 2}](${u})`).join("\n") });
-            }
-        }
         const logChannel = await message.guild.channels.fetch(logChannelId).catch(() => null);
-        if (logChannel && logChannel.isTextBased()) {
-            await logChannel.send({ embeds: [embed] });
+        if (!logChannel || !logChannel.isTextBased()) return;
+
+        for (const { moderation, type, text, url } of moderationResults) {
+            const flagged = moderation.results.filter(r => r.flagged);
+            for (const result of flagged) {
+                const cats = Object.entries(result.categories || {})
+                    .filter(([cat, val]) => val)
+                    .map(([cat]) => {
+                        const score = result.category_scores?.[cat] || 0;
+                        const name = categoryNames[cat] || cat;
+                        return `• **${name}**: ${(score * 100).toFixed(1)}%`;
+                    })
+                    .join("\n");
+                let embed;
+                if (type === 'text') {
+                    embed = new EmbedBuilder()
+                        .setColor(0xED4245)
+                        .setTitle(message.url + ` • <t:${Math.floor(Date.now() / 1000)}:R>`)
+                        .setDescription(`<@${message.author.id}>\n**Flagged Text:**\n${text ? text.substring(0, 300) : '(no text)'}\n${cats}`)
+                        .setTimestamp(message.createdAt)
+                        .setFooter({ text: `User: ${message.author.tag} (${message.author.id})` });
+                } else if (type === 'image') {
+                    embed = new EmbedBuilder()
+                        .setColor(0xED4245)
+                        .setTitle(message.url + ` • <t:${Math.floor(Date.now() / 1000)}:R>`)
+                        .setDescription(`<@${message.author.id}>\n**Flagged Image:**\n[Image](${url})\n${cats}`)
+                        .setImage(url)
+                        .setTimestamp(message.createdAt)
+                        .setFooter({ text: `User: ${message.author.tag} (${message.author.id})` });
+                }
+                await logChannel.send({ embeds: [embed] });
+            }
         }
     } catch (err) {
         log.error("Moderation error:", err);

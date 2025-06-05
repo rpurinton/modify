@@ -6,9 +6,16 @@ import { EmbedBuilder } from 'discord.js';
 /**
  * Handles message creation events to moderate content and log violations.
  * @param {import('discord.js').Message} message - The message object from Discord.
+ * @param {object} [deps] - Optional injected dependencies for testing.
+ * @param {object} [deps.log] - Logger to use (defaults to imported log).
+ * @param {Function} [deps.moderateMessageContent] - Moderation function (defaults to imported moderateMessageContent).
+ * @param {Function} [deps.getMsg] - Localization function (defaults to imported getMsg).
  * @returns {Promise<void>} - A promise that resolves when the moderation is complete.
  */
-export default async function (message) {
+export default async function (message, deps = {}) {
+    const injectedLog = deps.log || log;
+    const injectedModerate = deps.moderateMessageContent || moderateMessageContent;
+    const injectedGetMsg = deps.getMsg || getMsg;
     try {
         if (message.author.bot) return;
         if (!message.guild || !message.guild.id) return;
@@ -25,7 +32,7 @@ export default async function (message) {
         // Moderate text (if present)
         if (text && text.trim().length > 0) {
             moderationPromises.push(
-                moderateMessageContent(text, []).then(moderation =>
+                injectedModerate(text, []).then(moderation =>
                     moderation && moderation.results ? { moderation, type: 'text', text } : null
                 )
             );
@@ -33,7 +40,7 @@ export default async function (message) {
         // Moderate each image (with no text)
         for (const url of imageUrls) {
             moderationPromises.push(
-                moderateMessageContent('', [url]).then(moderation =>
+                injectedModerate('', [url]).then(moderation =>
                     moderation && moderation.results ? { moderation, type: 'image', url } : null
                 )
             );
@@ -45,7 +52,7 @@ export default async function (message) {
 
         // Send a separate alert for each violation (text or image)
         const logChannelId = global.logChannels[message.guild.id];
-        const categoryNames = getMsg(global.guildLocales?.[message.guild.id], 'categories', {});
+        const categoryNames = injectedGetMsg(global.guildLocales?.[message.guild.id], 'categories', {});
         const logChannel = await message.guild.channels.fetch(logChannelId).catch(() => null);
         if (!logChannel || !logChannel.isTextBased()) return;
 
@@ -81,7 +88,7 @@ export default async function (message) {
             }
         }
     } catch (err) {
-        log.error("Moderation error:", err);
+        injectedLog.error("Moderation error:", err);
         try {
             const logChannelId = global.logChannels?.[message.guild?.id];
             const logChannel = logChannelId ? await message.guild.channels.fetch(logChannelId).catch(() => null) : null;
@@ -89,7 +96,7 @@ export default async function (message) {
                 await logChannel.send({ content: `Moderation error: ${err?.message || err}` });
             }
         } catch (logErr) {
-            log.error("Failed to send error to log channel:", logErr);
+            injectedLog.error("Failed to send error to log channel:", logErr);
         }
     }
 }

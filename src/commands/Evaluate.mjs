@@ -2,14 +2,14 @@ import log from '../log.mjs';
 import { getMsg } from '../locales.mjs';
 import { moderateMessageContent } from "../custom/moderate.mjs";
 
-export default async function (interaction) {
-    log.debug("Evaluate command invoked");
+export default async function (interaction, injectedLog = log, injectedModerate = moderateMessageContent) {
+    injectedLog.debug("Evaluate command invoked");
     const targetMessage = interaction.targetMessage;
     if (!targetMessage) {
-        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_no_message', 'No message found to evaluate.'), flags: 1 << 6 });
+        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_no_message', 'No message found to evaluate.', injectedLog), flags: 1 << 6 });
         return;
     }
-    const categoryNames = getMsg(interaction.locale, 'categories', {});
+    const categoryNames = getMsg(interaction.locale, 'categories', {}, injectedLog);
 
     const text = targetMessage.content;
     const imageAttachments = (targetMessage.attachments ? Array.from(targetMessage.attachments.values()) : [])
@@ -17,14 +17,14 @@ export default async function (interaction) {
     const imageUrls = imageAttachments.map(att => att.url);
 
     if (!text && imageUrls.length === 0) {
-        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_error', 'No messages or images to evaluate.'), flags: 1 << 6 });
+        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_error', 'No messages or images to evaluate.', injectedLog), flags: 1 << 6 });
         return;
     }
 
     try {
-        const moderation = await moderateMessageContent(text, imageUrls);
+        const moderation = await injectedModerate(text, imageUrls);
         if (!moderation || !moderation.results.length) {
-            await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_no_results', 'No moderation results.'), flags: 1 << 6 });
+            await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_no_results', 'No moderation results.', injectedLog), flags: 1 << 6 });
             return;
         }
         const result = moderation.results[0];
@@ -38,7 +38,7 @@ export default async function (interaction) {
         results = results.trim();
         await interaction.reply({ content: results, flags: 1 << 6 });
     } catch (err) {
-        log.error("Moderation error:", err);
-        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_moderation_error', 'Moderation error.'), flags: 1 << 6 });
+        injectedLog.error("Moderation error:", err);
+        await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_moderation_error', 'Moderation error.', injectedLog), flags: 1 << 6 });
     }
 }

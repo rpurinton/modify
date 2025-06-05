@@ -22,21 +22,50 @@ export default async function (interaction, injectedLog = log, injectedModerate 
     }
 
     try {
-        const moderation = await injectedModerate(text, imageUrls);
-        if (!moderation || !moderation.results.length) {
+        // Prepare moderation promises for text and each image
+        const moderationPromises = [];
+        if (text && text.trim().length > 0) {
+            moderationPromises.push(
+                injectedModerate(text, []).then(moderation => ({ moderation, type: 'text', text }))
+            );
+        }
+        for (const url of imageUrls) {
+            moderationPromises.push(
+                injectedModerate('', [url]).then(moderation => ({ moderation, type: 'image', url }))
+            );
+        }
+        const moderationResultsRaw = await Promise.all(moderationPromises);
+        const moderationResults = moderationResultsRaw.filter(r => r.moderation && r.moderation.results && r.moderation.results.length);
+
+        if (moderationResults.length === 0) {
             await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_no_results', 'No moderation results.', injectedLog), flags: 1 << 6 });
             return;
         }
-        const result = moderation.results[0];
-        let results = Object.entries(result.category_scores || {})
-            .map(([key, value]) => {
-                const formattedScore = Math.round(value * 100) + "%";
-                const category = categoryNames[key] || key;
-                return `${category}: ${formattedScore}`;
-            })
-            .join("\n");
-        results = results.trim();
-        await interaction.reply({ content: results, flags: 1 << 6 });
+
+        let first = true;
+        for (const { moderation, type, text, url } of moderationResults) {
+            const result = moderation.results[0];
+            let results = Object.entries(result.category_scores || {})
+                .map(([key, value]) => {
+                    const formattedScore = Math.round(value * 100) + "%";
+                    const category = categoryNames[key] || key;
+                    return `${category}: ${formattedScore}`;
+                })
+                .join("\n");
+            results = results.trim();
+            let content;
+            if (type === 'text') {
+                content = `**Text Moderation:**\n${text ? text.substring(0, 300) : '(no text)'}\n${results}`;
+            } else if (type === 'image') {
+                content = `**Image Moderation:** [Image](${url})\n${results}`;
+            }
+            if (first) {
+                await interaction.reply({ content, flags: 1 << 6 });
+                first = false;
+            } else {
+                await interaction.followUp({ content, flags: 1 << 6 });
+            }
+        }
     } catch (err) {
         injectedLog.error("Moderation error:", err);
         await interaction.reply({ content: getMsg(interaction.locale, 'evaluate_moderation_error', 'Moderation error.', injectedLog), flags: 1 << 6 });

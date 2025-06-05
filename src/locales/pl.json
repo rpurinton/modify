@@ -1,3 +1,27 @@
 {
-    "help": "To jest tekst pomocy."
+  "help": "🤖 **Przewodnik pomocy Modify**\n\nModify jest tutaj, aby chronić twój serwer Discord! Oto jak zacząć:\n\n🔑 **Polecenie: /log_channel**\nUżyj tego polecenia, aby wyznaczyć kanał, na który Modify będzie wysyłać alerty dotyczące wiadomości oznaczonych ze względu na mowę nienawiści, groźby, nękanie, samookaleczenia, treści seksualne lub przemoc.\n\n**Ustawianie kanału dziennika:**\n1. Utwórz nowy kanał (lub wybierz istniejący) na alerty Modify.\n2. Upewnij się, że Modify ma uprawnienia do wysyłania wiadomości w tym kanale.\n3. Wprowadź `/log_channel` na wybranym kanale, aby ustawić go jako kanał dziennika.\n\n✨ To wszystko! Modify będzie teraz wysyłać powiadomienia do twojego kanału dziennika, jeśli wiadomość zostanie oznaczona. Pamiętaj, że do ustawienia kanału dziennika potrzebujesz uprawnień 'zarządzaj serwerem'.\n\n🚀 *Plany na przyszłość:*\n- Niestandardowe poziomy progów dla kategorii treści.\n- Dopasowane polityki dla różnych kanałów i ról.\n- Polityka kar dla powtarzających się wykroczeń.\n\nBądź na bieżąco z aktualizacjami!\n\nPotrzebujesz więcej pomocy? **Dziękujemy za korzystanie z Modify! Stwórzmy razem bezpieczną społeczność.**\n\n🧹 **Polecenie: /purge**\nUżyj tego polecenia, aby hurtowo usuwać wiadomości na kanale. Możesz określić liczbę wiadomości do usunięcia (1-100), filtrować według treści, użytkownika, wiadomości z aplikacji lub wiadomości zawierających osadzenia.\n\n**Jak używać /purge:**\n- `/purge amount:<number>` — Usuń do 100 najnowszych wiadomości.\n- Opcjonalnie: Dodaj filtry takie jak `contains:<text>`, `user:<user>`, `apps:true` lub `embeds:true`, aby celować w konkretne wiadomości.\n- Do korzystania z tego polecenia potrzebujesz uprawnień 'zarządzaj wiadomościami'.",
+  "log_channel_confirm": "Kanał dziennika ustawiony na",
+  "log_channel_admin_only": "Przepraszam, to polecenie jest przeznaczone tylko dla administratorów.",
+  "log_channel_error": "Przepraszam, wystąpił błąd po naszej stronie. Proszę spróbuj ponownie później.",
+  "categories": {
+    "sexual": "Seksualne",
+    "sexual/minors": "Seksualne/Nieletni",
+    "harassment": "Nękanie",
+    "harassment/threatening": "Nękanie/Zagrożenie",
+    "hate": "Nienawiść",
+    "hate/threatening": "Nienawiść/Zagrożenie",
+    "illicit": "Nielegalne",
+    "illicit/violent": "Nielegalne/Przemoc",
+    "self-harm": "Samouszkodzenia",
+    "self-harm/intent": "Samouszkodzenia/Zamiar",
+    "self-harm/instructions": "Samouszkodzenia/Instrukcje",
+    "violence": "Przemoc",
+    "violence/graphic": "Przemoc/Graficzne"
+  },
+  "purge_app_permission_missing": "Aplikacja nie ma uprawnień do zarządzania wiadomościami.",
+  "purge_user_permission_missing": "Użytkownik nie ma uprawnień do zarządzania wiadomościami.",
+  "purge_invalid_amount": "Nieprawidłowa liczba wiadomości do usunięcia. Musi być między 1 a 100.",
+  "purge_no_messages": "Brak wiadomości do usunięcia.",
+  "purge_success": "Usunięte wiadomości: ",
+  "evaluate_error": "Brak wiadomości lub obrazów do oceny."
 }

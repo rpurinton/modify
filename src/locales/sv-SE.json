@@ -1,3 +1,27 @@
 {
-    "help": "Detta är hjälpinformationen."
+  "help": "🤖 **Modify Hjälpguide**\n\nModify finns här för att hålla din Discord-server säker! Så här kommer du igång:\n\n🔑 **Kommando: /log_channel**\nAnvänd detta kommando för att ange en kanal där Modify skickar aviseringar för meddelanden som flaggas för innehåll med hat, hot, trakasserier, självskada, sexuellt innehåll eller våld.\n\n**Ställ in din loggkanal:**\n1. Skapa en ny kanal (eller välj en befintlig) för Modify-aviseringar.\n2. Se till att Modify har behörighet att skicka meddelanden där.\n3. Ange `/log_channel` i den angivna kanalen för att ställa in den som din loggkanal.\n\n✨ Klart! Modify kommer nu att skicka meddelanden till din loggkanal om ett meddelande flaggas. Kom ihåg att du behöver behörighet att 'manage server' för att ställa in loggkanalen.\n\n🚀 *Framtida planer:*\n- Anpassade tröskelnivåer för innehållskategorier.\n- Anpassade regler för olika kanaler och roller.\n- Straffpolicyer för upprepade överträdelser.\n\nHåll dig uppdaterad för nyheter!\n\nBehöver du mer hjälp? **Tack för att du använder Modify! Låt oss skapa en säker gemenskap tillsammans.**\n\n🧹 **Kommando: /purge**\nAnvänd detta kommando för att bulk-radera meddelanden i en kanal. Du kan ange antalet meddelanden som ska tas bort (1-100), filtrera efter innehåll, användare, meddelanden från appar eller meddelanden med inbäddningar.\n\n**Så här använder du /purge:**\n- `/purge amount:<number>` — Ta bort upp till 100 senaste meddelanden.\n- Valfritt: Lägg till filter som `contains:<text>`, `user:<user>`, `apps:true` eller `embeds:true` för att rikta in dig på specifika meddelanden.\n- Du behöver behörighet att 'manage messages' för att använda detta kommando.",
+  "log_channel_confirm": "Loggkanal satt till",
+  "log_channel_admin_only": "Tyvärr, detta kommando är endast för administratörer.",
+  "log_channel_error": "Tyvärr, något gick fel hos oss. Försök igen senare.",
+  "categories": {
+    "sexual": "Sexuell",
+    "sexual/minors": "Sexuell/Minderåriga",
+    "harassment": "Trakasserier",
+    "harassment/threatening": "Trakasserier/Hotfull",
+    "hate": "Hat",
+    "hate/threatening": "Hat/Hotfull",
+    "illicit": "Illegalt",
+    "illicit/violent": "Illegalt/Våldsamt",
+    "self-harm": "Självskada",
+    "self-harm/intent": "Självskada/Avsikt",
+    "self-harm/instructions": "Självskada/Instruktioner",
+    "violence": "Våld",
+    "violence/graphic": "Våld/Grafiskt"
+  },
+  "purge_app_permission_missing": "App saknar behörighet att hantera meddelanden.",
+  "purge_user_permission_missing": "Användaren saknar behörighet att hantera meddelanden.",
+  "purge_invalid_amount": "Ogiltigt rensningsbelopp. Måste vara mellan 1 och 100.",
+  "purge_no_messages": "Inga meddelanden att ta bort.",
+  "purge_success": "Rensade meddelanden: ",
+  "evaluate_error": "Inga meddelanden eller bilder att utvärdera."
 }

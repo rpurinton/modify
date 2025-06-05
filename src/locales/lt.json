@@ -1,3 +1,27 @@
 {
-    "help": "Tai yra pagalbos tekstas."
+  "help": "🤖 **Modify pagalbos vadovas**\n\nModify čia, kad jūsų Discord serveris būtų saugus! Štai kaip pradėti:\n\n🔑 **Komanda: /log_channel**\nNaudokite šią komandą, kad nurodytumėte kanalą, kuriame Modify siųs įspėjimus apie pranešimus, pažymėtus dėl neapykantos kalbos, grasinimų, priekabiavimo, savęs žalojimo, seksualinio turinio ar smurto.\n\n**Jūsų žurnalo kanalo nustatymas:**\n1. Sukurkite naują kanalą (arba pasirinkite esamą) Modify įspėjimams.\n2. Įsitikinkite, kad Modify turi leidimą siųsti pranešimus ten.\n3. Įveskite `/log_channel` nurodytame kanale, kad nustatytumėte jį kaip žurnalo kanalą.\n\n✨ Štai ir viskas! Jei pranešimas pažymėtas, Modify siunčia pranešimus į jūsų žurnalo kanalą. Atminkite, kad norint nustatyti žurnalo kanalą, reikia turėti teises „manage server“.\n\n🚀 *Būsimi planai:*\n- Individualūs slenksčių lygiai turinio kategorijoms.\n- Pritaikytos politikos skirtingiems kanalams ir vaidmenims.\n- Baudos politikos už pakartotinius pažeidimus.\n\nSekite naujinius!\n\nReikia daugiau pagalbos? **Dėkojame, kad naudojate Modify! Kurkime saugią bendruomenę kartu.**\n\n🧹 **Komanda: /purge**\nNaudokite šią komandą, kad masiškai ištrintumėte pranešimus kanale. Galite nurodyti ištrintinų pranešimų skaičių (nuo 1 iki 100), filtruoti pagal turinį, naudotoją, programėlių pranešimus arba pranešimus su įterptais elementais.\n\n**Kaip naudoti /purge:**\n- `/purge amount:<number>` — Ištrinkite iki 100 naujausių pranešimų.\n- Pasirinktinai: pridėkite filtrus, pvz., `contains:<text>`, `user:<user>`, `apps:true` arba `embeds:true`, kad nukreiptumėte į konkrečius pranešimus.\n- Norint naudoti šią komandą, reikia turėti „manage messages“ teises.",
+  "log_channel_confirm": "Žurnalo kanalas nustatytas į",
+  "log_channel_admin_only": "Atsiprašome, bet ši komanda skirta tik administratoriams.",
+  "log_channel_error": "Atsiprašome, bet įvyko klaida. Bandykite dar kartą vėliau.",
+  "categories": {
+    "sexual": "Seksualinis",
+    "sexual/minors": "Seksualinis/Mažamečiai",
+    "harassment": "Priekabiavimas",
+    "harassment/threatening": "Priekabiavimas/Grasinantis",
+    "hate": "Niekšiškumas",
+    "hate/threatening": "Niekšiškumas/Grasinantis",
+    "illicit": "Neleistinas",
+    "illicit/violent": "Neleistinas/Smurtinis",
+    "self-harm": "Savęs žalojimas",
+    "self-harm/intent": "Savęs žalojimas/Intencija",
+    "self-harm/instructions": "Savęs žalojimas/Instrukcijos",
+    "violence": "Smurtas",
+    "violence/graphic": "Smurtas/Grafiškai"
+  },
+  "purge_app_permission_missing": "Programėlei trūksta leidimų valdyti žinutes.",
+  "purge_user_permission_missing": "Vartotojui trūksta leidimų valdyti žinutes.",
+  "purge_invalid_amount": "Neteisingas masinio šalinimo kiekis. Turi būti nuo 1 iki 100.",
+  "purge_no_messages": "Nėra žinučių, kurių būtų galima pašalinti.",
+  "purge_success": "Išvalytos žinutės: ",
+  "evaluate_error": "Nėra žinučių ar paveikslėlių, kuriuos būtų galima įvertinti."
 }

@@ -1,3 +1,27 @@
 {
-    "help": "Dette er hjelpeteksten."
+  "help": "🤖 **Modify Hjelpeguide**\n\nModify er her for å holde Discord-serveren din trygg! Slik kommer du i gang:\n\n🔑 **Kommando: /log_channel**\nBruk denne kommandoen til å angi en kanal hvor Modify vil sende varsler for meldinger flagget for å inneholde hatprat, trusler, trakassering, selvskading, seksuelt innhold eller vold.\n\n**Slik setter du opp loggkanalen din:**\n1. Opprett en ny kanal (eller velg en eksisterende) for Modify-varsler.\n2. Sørg for at Modify har tillatelse til å sende meldinger der.\n3. Skriv inn `/log_channel` i den angitte kanalen for å sette den som loggkanal.\n\n✨ Det er det! Modify vil nå sende varsler til loggkanalen din hvis en melding blir flagget. Husk at du må ha 'manage server'-tillatelser for å sette loggkanalen.\n\n🚀 *Fremtidsplaner:*\n- Tilpassede terskelnivåer for innholdskategorier.\n- Skreddersydde retningslinjer for ulike kanaler og roller.\n- Straffepolicyer for gjentatte brudd.\n\nHold deg oppdatert for oppdateringer!\n\nTrenger du mer hjelp? **Takk for at du bruker Modify! La oss sammen skape et trygt fellesskap.**\n\n🧹 **Kommando: /purge**\nBruk denne kommandoen for å slette meldinger i en kanal i bulk. Du kan spesifisere antall meldinger som skal slettes (1-100), filtrere etter innhold, bruker, meldinger fra apper eller meldinger som inneholder innebygde elementer.\n\n**Slik bruker du /purge:**\n- `/purge amount:<number>` — Slett opptil 100 nylige meldinger.\n- Valgfritt: Legg til filtre som `contains:<text>`, `user:<user>`, `apps:true` eller `embeds:true` for å målrette bestemte meldinger.\n- Du trenger 'manage messages'-tillatelser for å bruke denne kommandoen.",
+  "log_channel_confirm": "Loggkanal satt til",
+  "log_channel_admin_only": "Beklager, men denne kommandoen er kun for administratorer.",
+  "log_channel_error": "Beklager, men noe gikk galt hos oss. Vennligst prøv igjen senere.",
+  "categories": {
+    "sexual": "Seksuell",
+    "sexual/minors": "Seksuell/Mindreårige",
+    "harassment": "Trakassering",
+    "harassment/threatening": "Trakassering/Truende",
+    "hate": "Hat",
+    "hate/threatening": "Hat/Truende",
+    "illicit": "Ulovlig",
+    "illicit/violent": "Ulovlig/Voldelig",
+    "self-harm": "Selvskading",
+    "self-harm/intent": "Selvskading/Intensjon",
+    "self-harm/instructions": "Selvskading/Instruksjoner",
+    "violence": "Vold",
+    "violence/graphic": "Vold/Grafisk"
+  },
+  "purge_app_permission_missing": "App mangler tillatelse til å administrere meldinger.",
+  "purge_user_permission_missing": "Bruker mangler tillatelse til å administrere meldinger.",
+  "purge_invalid_amount": "Ugyldig mengde for rensing. Må være mellom 1 og 100.",
+  "purge_no_messages": "Ingen meldinger å slette.",
+  "purge_success": "Rensede meldinger: ",
+  "evaluate_error": "Ingen meldinger eller bilder å evaluere."
 }

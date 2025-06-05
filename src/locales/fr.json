@@ -1,3 +1,27 @@
 {
-    "help": "Ceci est le texte d'aide."
+  "help": "🤖 **Guide d'aide Modify**\n\nModify est là pour garder votre serveur Discord en sécurité! Voici comment commencer:\n\n🔑 **Commande : /log_channel**\nUtilisez cette commande pour désigner un canal où Modify enverra des alertes pour les messages signalés pour discours haineux, menaces, harcèlement, automutilation, contenu sexuel ou violence.\n\n**Configuration de votre canal de journalisation:**\n1. Créez un nouveau canal (ou choisissez-en un existant) pour les alertes Modify.\n2. Assurez-vous que Modify a la permission d'envoyer des messages à cet endroit.\n3. Entrez `/log_channel` dans le canal désigné pour le définir comme votre canal de journalisation.\n\n✨ C'est tout ! Modify enverra désormais des notifications à votre canal de journalisation si un message est signalé. N'oubliez pas, vous devez avoir la permission 'manage server' pour configurer le canal de journalisation.\n\n🚀 *Plans futurs:*\n- Niveaux de seuil personnalisés pour les catégories de contenu.\n- Politiques adaptées pour différents canaux et rôles.\n- Politiques de sanctions pour violations répétées.\n\nRestez à l'écoute pour les mises à jour !\n\nBesoin de plus d'aide ? **Merci d'utiliser Modify ! Créons ensemble une communauté sûre.**\n\n🧹 **Commande : /purge**\nUtilisez cette commande pour supprimer en masse les messages dans un canal. Vous pouvez spécifier le nombre de messages à supprimer (1-100), filtrer par contenu, utilisateur, messages provenant d'applications ou messages contenant des intégrations.\n\n**Comment utiliser /purge :**\n- `/purge amount:<number>` — Supprimez jusqu'à 100 messages récents.\n- Facultatif : Ajoutez des filtres tels que `contains:<text>`, `user:<user>`, `apps:true` ou `embeds:true` pour cibler des messages spécifiques.\n- Vous devez avoir la permission 'manage messages' pour utiliser cette commande.",
+  "log_channel_confirm": "Canal de journalisation défini sur",
+  "log_channel_admin_only": "Désolé, mais cette commande est réservée aux administrateurs.",
+  "log_channel_error": "Désolé, mais un problème est survenu de notre côté. Veuillez réessayer plus tard.",
+  "categories": {
+    "sexual": "Sexuel",
+    "sexual/minors": "Sexuel/Mineurs",
+    "harassment": "Harcèlement",
+    "harassment/threatening": "Harcèlement/Menaçant",
+    "hate": "Haine",
+    "hate/threatening": "Haine/Menaçant",
+    "illicit": "Illicite",
+    "illicit/violent": "Illicite/Violent",
+    "self-harm": "Automutilation",
+    "self-harm/intent": "Automutilation/Intention",
+    "self-harm/instructions": "Automutilation/Instructions",
+    "violence": "Violence",
+    "violence/graphic": "Violence/Graphique"
+  },
+  "purge_app_permission_missing": "L'application n'a pas la permission de gérer les messages.",
+  "purge_user_permission_missing": "L'utilisateur n'a pas la permission de gérer les messages.",
+  "purge_invalid_amount": "Montant de suppression invalide. Doit être entre 1 et 100.",
+  "purge_no_messages": "Aucun message à supprimer.",
+  "purge_success": "Messages supprimés : ",
+  "evaluate_error": "Aucun message ou image à évaluer."
 }

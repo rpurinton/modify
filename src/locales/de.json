@@ -1,3 +1,27 @@
 {
-    "help": "Dies ist der Hilfetext."
+  "help": "🤖 **Modify Hilfeanleitung**\n\nModify ist hier, um deinen Discord-Server sicher zu halten! So startest du:\n\n🔑 **Befehl: /log_channel**\nVerwende diesen Befehl, um einen Kanal festzulegen, in den Modify Warnungen für Nachrichten sendet, die Hassrede, Drohungen, Belästigung, Selbstverletzung, sexuellen Inhalt oder Gewalt enthalten.\n\n**Einrichten deines Logkanals:**\n1. Erstelle einen neuen Kanal (oder wähle einen bestehenden) für Modify-Warnungen.\n2. Stelle sicher, dass Modify die Berechtigung hat, Nachrichten dort zu senden.\n3. Gib `/log_channel` im festgelegten Kanal ein, um ihn als deinen Logkanal festzulegen.\n\n✨ Das ist alles! Modify sendet nun Benachrichtigungen an deinen Logkanal, wenn eine Nachricht markiert wird. Denke daran, du benötigst die Berechtigung 'manage server', um den Logkanal festzulegen.\n\n🚀 *Zukünftige Pläne:*\n- Benutzerdefinierte Schwellenwerte für Inhaltskategorien.\n- Angepasste Richtlinien für verschiedene Kanäle und Rollen.\n- Strafrichtlinien bei wiederholten Verstößen.\n\nBleib dran für Updates!\n\nBenötigst du mehr Hilfe? **Danke, dass du Modify benutzt! Lass uns gemeinsam eine sichere Gemeinschaft schaffen.**\n\n🧹 **Befehl: /purge**\nVerwende diesen Befehl, um Nachrichten in einem Kanal massenweise zu löschen. Du kannst die Anzahl der zu löschenden Nachrichten (1-100) angeben und nach Inhalt, Benutzer, Nachrichten von Apps oder Nachrichten mit eingebetteten Inhalten filtern.\n\n**So verwendest du /purge:**\n- `/purge amount:<number>` — Lösche bis zu 100 neueste Nachrichten.\n- Optional: Füge Filter wie `contains:<text>`, `user:<user>`, `apps:true` oder `embeds:true` hinzu, um bestimmte Nachrichten auszuwählen.\n- Du benötigst die Berechtigung 'manage messages', um diesen Befehl zu verwenden.",
+  "log_channel_confirm": "Logkanal eingestellt auf",
+  "log_channel_admin_only": "Es tut mir leid, aber dieser Befehl ist nur für Administratoren.",
+  "log_channel_error": "Es tut mir leid, aber bei uns ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+  "categories": {
+    "sexual": "Sexuell",
+    "sexual/minors": "Sexuell/Minderjährige",
+    "harassment": "Belästigung",
+    "harassment/threatening": "Belästigung/Drohung",
+    "hate": "Hass",
+    "hate/threatening": "Hass/Drohung",
+    "illicit": "Illegale",
+    "illicit/violent": "Illegale/Gewalttätig",
+    "self-harm": "Selbstverletzung",
+    "self-harm/intent": "Selbstverletzung/Absicht",
+    "self-harm/instructions": "Selbstverletzung/Anweisungen",
+    "violence": "Gewalt",
+    "violence/graphic": "Gewalt/Grafisch"
+  },
+  "purge_app_permission_missing": "Die App hat keine Berechtigung zum Verwalten von Nachrichten.",
+  "purge_user_permission_missing": "Der Benutzer hat keine Berechtigung zum Verwalten von Nachrichten.",
+  "purge_invalid_amount": "Ungültige Löschmenge. Muss zwischen 1 und 100 liegen.",
+  "purge_no_messages": "Keine Nachrichten zum Löschen.",
+  "purge_success": "Gelöschte Nachrichten: ",
+  "evaluate_error": "Keine Nachrichten oder Bilder zum Auswerten."
 }

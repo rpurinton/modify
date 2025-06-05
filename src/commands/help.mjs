@@ -3,29 +3,7 @@ import { getMsg } from '../locales.mjs';
 
 // Command handler for /help
 export default async function (interaction) {
-    try {
-        const helpContent = getMsg(interaction.locale, "help", "No help available for this command.");
-        await interaction.reply({
-            content: helpContent,
-            flags: 1 << 6, // EPHEMERAL
-        });
-    } catch (err) {
-        log.error("Error in /help handler", {
-            errorMessage: err && err.message,
-            errorStack: err && err.stack,
-            errorObj: err
-        });
-        try {
-            await interaction.reply({
-                content: "An error occurred while processing your request.",
-                flags: 1 << 6,
-            });
-        } catch (e) {
-            log.error("Failed to reply with error message", {
-                errorMessage: e && e.message,
-                errorStack: e && e.stack,
-                errorObj: e
-            });
-        }
-    }
+    log.debug("/help command invoked");
+    const helpText = getMsg(interaction.locale, 'help', 'No help text available.');
+    await interaction.reply({ content: helpText, flags: 1 << 6 });
 }

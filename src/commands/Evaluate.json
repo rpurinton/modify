@@ -1,0 +1,45 @@
+{
+    "type": 3,
+    "name": "Evaluate",
+    "name_localizations": {
+        "en-US": "Evaluate",
+        "en-GB": "Evaluate",
+        "bg": "Оценете",
+        "cs": "Vyhodnotit",
+        "da": "Evaluer",
+        "de": "Bewerten",
+        "el": "Αξιολογήστε",
+        "es-ES": "Evaluar",
+        "es-419": "Evaluar",
+        "fi": "Arvioi",
+        "fr": "Évaluer",
+        "hi": "मूल्यांकनकरें",
+        "hr": "Procijeniti",
+        "hu": "Értékelés",
+        "id": "Evaluasi",
+        "it": "Valuta",
+        "ja": "評価する",
+        "ko": "평가",
+        "lt": "Įvertinti",
+        "nl": "Evalueren",
+        "no": "Evaluer",
+        "pl": "Oceń",
+        "pt-BR": "Avaliar",
+        "ro": "Evaluează",
+        "ru": "Оценить",
+        "sv-SE": "Utvärdera",
+        "th": "ประเมินผล",
+        "tr": "Değerlendir",
+        "uk": "Оцінити",
+        "vi": "Đánhgiá",
+        "zh-CN": "评估",
+        "zh-TW": "評估"
+    },
+    "default_permission": true,
+    "permissions": {
+        "user_permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES"
+        ]
+    }
+}

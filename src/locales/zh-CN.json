@@ -1,3 +1,26 @@
 {
-    "help": "这是帮助文本。"
+  "help": "🤖 **Modify 帮助指南**\n\nModify 旨在保持您的 Discord 服务器安全！开始使用方法如下：\n\n🔑 **命令：/log_channel**\n使用此命令指定 Modify 将为因仇恨言论、威胁、骚扰、自残、色情内容或暴力而被标记的消息发送警报的频道。\n\n**设置您的日志频道：**\n1. 创建一个新的频道（或选择现有的频道）来接收 Modify 的警报。\n2. 确保 Modify 有权限在该频道发送消息。\n3. 在指定频道输入 `/log_channel` 来将其设为您的日志频道。\n\n✨ 完成！如果消息被标记，Modify 将发送通知到您的日志频道。请记住，您需要拥有“管理服务器”的权限才能设置日志频道。\n\n🚀 *未来计划：*\n- 内容类别的自定义阈值级别。\n- 针对不同频道和角色的定制策略。\n- 对重复违规的处罚政策。\n\n敬请关注更新！\n\n需要更多帮助？**感谢您使用 Modify！让我们共同创建一个安全的社区。**\n\n🧹 **命令：/purge**\n使用此命令可批量删除频道内的消息。您可以指定删除消息数量（1-100），按内容、用户、应用消息或包含嵌入的消息过滤。\n\n**/purge 使用方法：**\n- `/purge amount:<number>` — 删除最多 100 条最近消息。\n- 可选：添加 `contains:<text>`、`user:<user>`、`apps:true` 或 `embeds:true` 等过滤器来定位特定消息。\n- 使用该命令需要“管理消息”权限。\n","log_channel_confirm": "日志频道已设置为",
+  "log_channel_admin_only": "抱歉，该命令仅限管理员使用。",
+  "log_channel_error": "抱歉，出现问题，请稍后再试。",
+  "categories": {
+    "sexual": "性内容",
+    "sexual/minors": "性内容/未成年人",
+    "harassment": "骚扰",
+    "harassment/threatening": "骚扰/威胁",
+    "hate": "仇恨",
+    "hate/threatening": "仇恨/威胁",
+    "illicit": "非法",
+    "illicit/violent": "非法/暴力",
+    "self-harm": "自残",
+    "self-harm/intent": "自残/意图",
+    "self-harm/instructions": "自残/指令",
+    "violence": "暴力",
+    "violence/graphic": "暴力/图形"
+  },
+  "purge_app_permission_missing": "应用程序没有消息管理权限。",
+  "purge_user_permission_missing": "用户没有消息管理权限。",
+  "purge_invalid_amount": "无效的清理数量。必须介于 1 到 100 之间。",
+  "purge_no_messages": "没有要删除的消息。",
+  "purge_success": "已删除的消息数：",
+  "evaluate_error": "没有消息或图片可以评估。"
 }

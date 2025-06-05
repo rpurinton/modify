@@ -1,13 +1,12 @@
 {
-    "name": "skeleton",
-    "version": "1.0.0",
+    "name": "modify",
+    "version": "1.0.9",
     "type": "module",
     "description": "a Discord.js template supporting locales with dynamic events and /commands",
-    "main": "skeleton.js",
+    "main": "modify.js",
     "scripts": {
-        "start": "node skeleton.js",
-        "test": "npx --node-options=\"--experimental-vm-modules --no-warnings\" jest --detectOpenHandles --silent",
-        "commands:purge": "node ./src/purge-commands.mjs"
+        "start": "node modify.js",
+        "test": "npx --node-options=\"--experimental-vm-modules --no-warnings\" jest --detectOpenHandles --silent"
     },
     "keywords": [
         "discord",
@@ -32,6 +31,7 @@
         "discord.js": "^14.19.3",
         "dotenv": "^16.5.0",
         "mysql2": "^3.14.1",
+        "openai": "^5.0.1",
         "winston": "^3.17.0"
     },
     "devDependencies": {

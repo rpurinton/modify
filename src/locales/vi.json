@@ -1,3 +1,27 @@
 {
-    "help": "Đây là văn bản trợ giúp."
+  "help": "🤖 **Hướng dẫn trợ giúp Modify**\n\nModify ở đây để giữ an toàn cho máy chủ Discord của bạn! Đây là cách bắt đầu:\n\n🔑 **Lệnh: /log_channel**\nSử dụng lệnh này để chỉ định một kênh mà Modify sẽ gửi cảnh báo cho các tin nhắn bị đánh dấu vì có ngôn từ kích động thù địch, đe dọa, quấy rối, tự làm hại, nội dung tình dục hoặc bạo lực.\n\n**Cài đặt kênh nhật ký của bạn:**\n1. Tạo một kênh mới (hoặc chọn một kênh hiện có) cho các cảnh báo của Modify.\n2. Đảm bảo Modify có quyền gửi tin nhắn ở đó.\n3. Nhập `/log_channel` trong kênh được chỉ định để đặt làm kênh nhật ký của bạn.\n\n✨ Hoàn tất! Modify sẽ gửi thông báo đến kênh nhật ký của bạn nếu một tin nhắn bị đánh dấu. Hãy nhớ rằng bạn cần có quyền 'quản lý máy chủ' để thiết lập kênh nhật ký.\n\n🚀 *Kế hoạch tương lai:*\n- Các mức ngưỡng tùy chỉnh cho các danh mục nội dung.\n- Chính sách tùy chỉnh cho các kênh và vai trò khác nhau.\n- Chính sách hình phạt cho các vi phạm lặp lại.\n\nHãy theo dõi các cập nhật!\n\nCần thêm trợ giúp? **Cảm ơn bạn đã sử dụng Modify! Hãy cùng nhau xây dựng một cộng đồng an toàn.**\n\n🧹 **Lệnh: /purge**\nSử dụng lệnh này để xóa hàng loạt tin nhắn trong một kênh. Bạn có thể chỉ định số lượng tin nhắn cần xóa (1-100), lọc theo nội dung, người dùng, tin nhắn từ ứng dụng hoặc tin nhắn có nhúng.\n\n**Cách sử dụng /purge:**\n- `/purge amount:<number>` — Xóa tối đa 100 tin nhắn gần đây nhất.\n- Tùy chọn: Thêm các bộ lọc như `contains:<text>`, `user:<user>`, `apps:true` hoặc `embeds:true` để nhắm mục tiêu tin nhắn cụ thể.\n- Bạn cần có quyền 'quản lý tin nhắn' để sử dụng lệnh này.",
+  "log_channel_confirm": "Kênh nhật ký được đặt thành",
+  "log_channel_admin_only": "Xin lỗi, lệnh này chỉ dành cho quản trị viên.",
+  "log_channel_error": "Xin lỗi, đã xảy ra lỗi. Vui lòng thử lại sau.",
+  "categories": {
+    "sexual": "Nội dung tình dục",
+    "sexual/minors": "Nội dung tình dục/Trẻ vị thành niên",
+    "harassment": "Quấy rối",
+    "harassment/threatening": "Quấy rối/Đe dọa",
+    "hate": "Thù hận",
+    "hate/threatening": "Thù hận/Đe dọa",
+    "illicit": "Bất hợp pháp",
+    "illicit/violent": "Bất hợp pháp/Bạo lực",
+    "self-harm": "Tự làm hại",
+    "self-harm/intent": "Tự làm hại/Ý định",
+    "self-harm/instructions": "Tự làm hại/Hướng dẫn",
+    "violence": "Bạo lực",
+    "violence/graphic": "Bạo lực/Đồ họa"
+  },
+  "purge_app_permission_missing": "Ứng dụng không có quyền quản lý tin nhắn.",
+  "purge_user_permission_missing": "Người dùng không có quyền quản lý tin nhắn.",
+  "purge_invalid_amount": "Số lượng xóa không hợp lệ. Phải nằm trong khoảng từ 1 đến 100.",
+  "purge_no_messages": "Không có tin nhắn nào để xóa.",
+  "purge_success": "Số tin nhắn đã xóa: ",
+  "evaluate_error": "Không có tin nhắn hoặc hình ảnh để đánh giá."
 }

@@ -1,3 +1,27 @@
 {
-    "help": "Ez a súgószöveg."
+  "help": "🤖 **Modify Súgó Útmutató**\n\nA Modify azért van itt, hogy biztonságban tartsa a Discord szerveredet! Így kezdhetsz el:\n\n🔑 **Parancs: /log_channel**\nHasználd ezt a parancsot, hogy kijelölj egy csatornát, ahol a Modify riasztásokat küld azokról az üzenetekről, amelyek gyűlöletbeszédet, fenyegetéseket, zaklatást, önkárosítást, szexuális tartalmat vagy erőszakot tartalmaznak.\n\n**A naplózási csatorna beállítása:**\n1. Hozz létre egy új csatornát (vagy válassz egy meglévőt) a Modify figyelmeztetéseknek.\n2. Győződj meg róla, hogy a Modify engedélyt kapott az üzenetek küldésére oda.\n3. Írd be a `/log_channel` parancsot a kijelölt csatornába, hogy beállítsd naplózási csatornaként.\n\n✨ Ennyi az egész! Mostantól a Modify értesítéseket küld a naplózási csatornádra, ha egy üzenet jelölve van. Ne feledd, a naplózási csatorna beállításához a 'manage server' jogosultság szükséges.\n\n🚀 *Jövőbeli tervek:*\n- Egyedi küszöbszintek tartalmi kategóriákhoz.\n- Testreszabott szabályzatok különböző csatornákra és szerepkörökre.\n- Büntetési szabályzatok ismétlődő szabálysértések esetén.\n\nMaradj naprakész a frissítésekkel!\n\nTovábbi segítségre van szükséged? **Köszönjük, hogy a Modify-t használod! Alakítsunk együtt egy biztonságos közösséget.**\n\n🧹 **Parancs: /purge**\nHasználd ezt a parancsot a csatornában található üzenetek tömeges törléséhez. Megadhatod a törlendő üzenetek számát (1-100), szűrhetsz tartalom, felhasználó, alkalmazásokból érkező üzenetek vagy beágyazott üzenetek alapján.\n\n**A /purge használata:**\n- `/purge amount:<number>` — Töröld az utolsó akár 100 üzenetet.\n- Opcionális: Adj hozzá szűrőket, mint `contains:<text>`, `user:<user>`, `apps:true` vagy `embeds:true` a konkrét üzenetek megcélzásához.\n- A parancs használatához 'manage messages' jogosultság szükséges.",
+  "log_channel_confirm": "A naplózási csatorna beállítva:",
+  "log_channel_admin_only": "Sajnáljuk, ez a parancs csak adminisztrátoroknak szól.",
+  "log_channel_error": "Sajnáljuk, de valami hiba történt. Kérjük, próbáld meg később újra.",
+  "categories": {
+    "sexual": "Szexuális",
+    "sexual/minors": "Szexuális/Kiskorúak",
+    "harassment": "Zaklatás",
+    "harassment/threatening": "Zaklatás/Fenyegető",
+    "hate": "Gyűlölet",
+    "hate/threatening": "Gyűlölet/Fenyegető",
+    "illicit": "Illegális",
+    "illicit/violent": "Illegális/Erőszakos",
+    "self-harm": "Önkárosítás",
+    "self-harm/intent": "Önkárosítás/Szándék",
+    "self-harm/instructions": "Önkárosítás/Útmutató",
+    "violence": "Erőszak",
+    "violence/graphic": "Erőszak/Grafikus"
+  },
+  "purge_app_permission_missing": "Az alkalmazás nem rendelkezik üzenetkezelési engedéllyel.",
+  "purge_user_permission_missing": "A felhasználónak nincs üzenetkezelési engedélye.",
+  "purge_invalid_amount": "Érvénytelen törlési mennyiség. 1 és 100 között kell lennie.",
+  "purge_no_messages": "Nincs törlendő üzenet.",
+  "purge_success": "Törölt üzenetek: ",
+  "evaluate_error": "Nincsenek értékelhető üzenetek vagy képek."
 }

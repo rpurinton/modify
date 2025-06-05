@@ -1,3 +1,27 @@
 {
-    "help": "Este es el texto de ayuda."
+  "help": "🤖 **Guía de ayuda de Modify**\n\n¡Modify está aquí para mantener su servidor de Discord seguro! Así es como puede comenzar:\n\n🔑 **Comando: /log_channel**\nUtilice este comando para designar un canal donde Modify enviará alertas para mensajes marcados por contener discurso de odio, amenazas, acoso, autolesiones, contenido sexual o violencia.\n\n**Configuración de su canal de registro:**\n1. Cree un nuevo canal (o elija uno existente) para las alertas de Modify.\n2. Asegúrese de que Modify tenga permiso para enviar mensajes allí.\n3. Ingrese `/log_channel` en el canal designado para establecerlo como su canal de registro.\n\n✨ Eso es todo. Modify ahora enviará notificaciones a su canal de registro si se marca un mensaje. Recuerde, necesita permisos 'administrar servidor' para configurar el canal de registro.\n\n🚀 *Planes futuros:*\n- Niveles de umbral personalizados para categorías de contenido.\n- Políticas personalizadas para diferentes canales y roles.\n- Políticas de castigo para infracciones repetidas.\n\n¡Manténgase atento a las actualizaciones!\n\n¿Necesita más ayuda? **Gracias por usar Modify! Creamos una comunidad segura juntos.**\n\n🧹 **Comando: /purge**\nUtilice este comando para eliminar mensajes en masa en un canal. Puede especificar la cantidad de mensajes a eliminar (1-100), filtrar por contenido, usuario, mensajes de aplicaciones o mensajes que contengan incrustaciones.\n\n**Cómo usar /purge:**\n- `/purge amount:<number>` — Elimine hasta 100 mensajes recientes.\n- Opcional: Agregue filtros como `contains:<text>`, `user:<user>`, `apps:true` o `embeds:true` para dirigirse a mensajes específicos.\n- Necesita permisos de 'administrar mensajes' para usar este comando.",
+  "log_channel_confirm": "Canal de registro establecido en",
+  "log_channel_admin_only": "Lo siento, pero este comando es solo para administradores.",
+  "log_channel_error": "Lo siento, pero algo salió mal en nuestro sistema. Por favor, inténtelo de nuevo más tarde.",
+  "categories": {
+    "sexual": "Sexual",
+    "sexual/minors": "Sexual/Menores",
+    "harassment": "Acoso",
+    "harassment/threatening": "Acoso/Amenazante",
+    "hate": "Odio",
+    "hate/threatening": "Odio/Amenazante",
+    "illicit": "Ilícito",
+    "illicit/violent": "Ilícito/Violento",
+    "self-harm": "Autolesión",
+    "self-harm/intent": "Autolesión/Intención",
+    "self-harm/instructions": "Autolesión/Instrucciones",
+    "violence": "Violencia",
+    "violence/graphic": "Violencia/Gráfico"
+  },
+  "purge_app_permission_missing": "La aplicación no tiene permiso para administrar mensajes.",
+  "purge_user_permission_missing": "El usuario no tiene permiso para administrar mensajes.",
+  "purge_invalid_amount": "Cantidad de purga no válida. Debe estar entre 1 y 100.",
+  "purge_no_messages": "No hay mensajes para eliminar.",
+  "purge_success": "Mensajes eliminados: ",
+  "evaluate_error": "No hay mensajes o imágenes para evaluar."
 }

@@ -1,3 +1,27 @@
 {
-    "help": "Ovo je tekst pomoći."
+  "help": "🤖 **Modify vodič za pomoć**\n\nModify je ovdje da vaš Discord server bude siguran! Evo kako početi:\n\n🔑 **Komanda: /log_channel**\nKoristite ovu komandu za označavanje kanala gdje će Modify slati upozorenja za poruke koje su označene zbog govora mržnje, prijetnji, uznemiravanja, samoozljeđivanja, seksualnog sadržaja ili nasilja.\n\n**Postavljanje vašeg kanala za evidenciju:**\n1. Kreirajte novi kanal (ili odaberite postojeći) za upozorenja Modify-a.\n2. Uvjerite se da Modify ima dopuštenje za slanje poruka tamo.\n3. Unesite `/log_channel` u označenom kanalu da ga postavite kao vaš kanal za evidenciju.\n\n✨ To je to! Modify će sada slati obavijesti u vaš kanal za evidenciju ako se poruka označi. Zapamtite, morate imati dozvolu 'manage server' da biste postavili kanal za evidenciju.\n\n🚀 *Planovi za budućnost:*\n- Prilagođene razine praga za kategorije sadržaja.\n- Prilagođene politike za različite kanale i uloge.\n- Kaznene politike za ponovljene prekršaje.\n\nOstanite u toku za ažuriranja!\n\nTreba vam dodatna pomoć? **Hvala što koristite Modify! Zajedno stvarajmo sigurnu zajednicu.**\n\n🧹 **Komanda: /purge**\nKoristite ovu komandu za masovno brisanje poruka na kanalu. Možete navesti broj poruka za brisanje (1-100), filtrirati prema sadržaju, korisniku, porukama iz aplikacija ili porukama koje sadrže ugrađene elemente.\n\n**Kako koristiti /purge:**\n- `/purge amount:<number>` — Izbrišite do 100 najnovijih poruka.\n- Opcionalno: Dodajte filtere kao što su `contains:<text>`, `user:<user>`, `apps:true` ili `embeds:true` da ciljate određene poruke.\n- Za korištenje ove komande trebate dozvolu 'manage messages'.",
+  "log_channel_confirm": "Kanal za evidenciju postavljen je na",
+  "log_channel_admin_only": "Žao nam je, ali ova komanda je samo za administratore.",
+  "log_channel_error": "Žao nam je, ali nešto je pošlo po zlu. Molimo pokušajte kasnije.",
+  "categories": {
+    "sexual": "Seksualno",
+    "sexual/minors": "Seksualno/Maloletni",
+    "harassment": "Uznemiravanje",
+    "harassment/threatening": "Uznemiravanje/Pretnje",
+    "hate": "Mržnja",
+    "hate/threatening": "Mržnja/Pretnje",
+    "illicit": "Nezakonito",
+    "illicit/violent": "Nezakonito/Nasilno",
+    "self-harm": "Samopovređivanje",
+    "self-harm/intent": "Samopovređivanje/Namera",
+    "self-harm/instructions": "Samopovređivanje/Uputstva",
+    "violence": "Nasilje",
+    "violence/graphic": "Nasilje/Grafički"
+  },
+  "purge_app_permission_missing": "Aplikacija nema dozvolu za upravljanje porukama.",
+  "purge_user_permission_missing": "Korisnik nema dozvolu za upravljanje porukama.",
+  "purge_invalid_amount": "Nevažeći iznos za čišćenje. Mora biti između 1 i 100.",
+  "purge_no_messages": "Nema poruka za brisanje.",
+  "purge_success": "Izbrisane poruke: ",
+  "evaluate_error": "Nema poruka ili slika za evaluaciju."
 }

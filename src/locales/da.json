@@ -1,3 +1,27 @@
 {
-    "help": "Dette er hjælpeteksten."
+  "help": "🤖 **Modify Hjælpeguide**\n\nModify er her for at holde din Discord-server sikker! Sådan kommer du i gang:\n\n🔑 **Kommando: /log_channel**\nBrug denne kommando til at angive en kanal, hvor Modify vil sende advarsler for beskeder, der indeholder hadtale, trusler, chikane, selvskade, seksuelt indhold eller vold.\n\n**Opsætning af din logkanal:**\n1. Opret en ny kanal (eller vælg en eksisterende) til Modify-advarsler.\n2. Sørg for, at Modify har tilladelse til at sende beskeder der.\n3. Indtast `/log_channel` i den angivne kanal for at sætte den som din logkanal.\n\n✨ Det er det! Modify vil nu sende meddelelser til din logkanal, hvis en besked bliver markeret. Husk, du skal have 'manage server'-rettigheder for at sætte logkanalen.\n\n🚀 *Fremtidige planer:*\n- Tilpassede tærskelniveauer for indholdskategorier.\n- Skræddersyede politikker for forskellige kanaler og roller.\n- Straffepolitikker for gentagne overtrædelser.\n\nHold øje med opdateringer!\n\nHar du brug for mere hjælp? **Tak fordi du bruger Modify! Lad os skabe et sikkert fællesskab sammen.**\n\n🧹 **Kommando: /purge**\nBrug denne kommando til masse-sletning af beskeder i en kanal. Du kan angive antallet af beskeder, der skal slettes (1-100), filtrere efter indhold, bruger, beskeder fra apps eller beskeder med indlejrede elementer.\n\n**Sådan bruger du /purge:**\n- `/purge amount:<number>` — Slet op til 100 seneste beskeder.\n- Valgfrit: Tilføj filtre som `contains:<text>`, `user:<user>`, `apps:true` eller `embeds:true` for at målrette specifikke beskeder.\n- Du skal have 'manage messages'-rettigheder for at bruge denne kommando.",
+  "log_channel_confirm": "Logkanal indstillet til",
+  "log_channel_admin_only": "Beklager, denne kommando er kun for administratorer.",
+  "log_channel_error": "Beklager, men noget gik galt hos os. Prøv igen senere.",
+  "categories": {
+    "sexual": "Seksuel",
+    "sexual/minors": "Seksuel/Mindreårige",
+    "harassment": "Chikane",
+    "harassment/threatening": "Chikane/Truende",
+    "hate": "Had",
+    "hate/threatening": "Had/Truende",
+    "illicit": "Ulovlig",
+    "illicit/violent": "Ulolig/Voldelig",
+    "self-harm": "Selvskade",
+    "self-harm/intent": "Selvskade/Intention",
+    "self-harm/instructions": "Selvskade/Instruktioner",
+    "violence": "Vold",
+    "violence/graphic": "Vold/Grafisk"
+  },
+  "purge_app_permission_missing": "Appen mangler rettigheden til at styre beskeder.",
+  "purge_user_permission_missing": "Brugeren mangler rettigheden til at styre beskeder.",
+  "purge_invalid_amount": "Ugyldigt antal til sletning. Skal være mellem 1 og 100.",
+  "purge_no_messages": "Ingen beskeder at slette.",
+  "purge_success": "Slettede beskeder: ",
+  "evaluate_error": "Ingen beskeder eller billeder at vurdere."
 }

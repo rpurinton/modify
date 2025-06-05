@@ -1,3 +1,27 @@
 {
-    "help": "Bu yardım metnidir."
+  "help": "🤖 **Modify Yardım Rehberi**\n\nModify, Discord sunucunuzun güvende kalmasını sağlamak için burada! Başlamak için:\n\n🔑 **Komut: /log_channel**\nBu komutu kullanarak, Modify'nin nefret söylemi, tehditler, taciz, kendine zarar verme, cinsel içerik veya şiddet içeren mesajlar için uyarılar göndereceği bir kanal atayın.\n\n**Kayıt kanalınızı ayarlama:**\n1. Modify uyarıları için yeni bir kanal oluşturun (veya mevcut bir kanalı seçin).\n2. Modify'nin o kanala mesaj gönderebilmesi için izin verin.\n3. Belirlenen kanalda `/log_channel` yazarak kayıt kanalı olarak ayarlayın.\n\n✨ Hepsi bu kadar! Bir mesaj işaretlenirse, Modify bildirimleri kayıt kanalınıza gönderir. Kayıt kanalını ayarlamak için 'sunucuyu yönet' iznine sahip olmanız gerekir.\n\n🚀 *Gelecek planları:*\n- İçerik kategorileri için özel eşik seviyeleri.\n- Farklı kanallar ve roller için uyarlanmış politikalar.\n- Tekrarlanan ihlaller için ceza politikaları.\n\nGüncellemeleri takip edin!\n\nDaha fazla yardıma mı ihtiyacınız var? **Modify'i kullandığınız için teşekkürler! Güvenli bir topluluk oluşturalım.**\n\n🧹 **Komut: /purge**\nBu komutla kanaldaki mesajları toplu olarak silebilirsiniz. Silinecek mesaj sayısını (1-100) belirtebilir, içerik, kullanıcı, uygulamadan gelen mesajlar veya içe gömülü mesajlara göre filtreleyebilirsiniz.\n\n**/purge kullanımı:**\n- `/purge amount:<number>` — Son 100 mesaja kadar siler.\n- İsteğe bağlı: Belirli mesajları hedeflemek için `contains:<text>`, `user:<user>`, `apps:true` veya `embeds:true` filtreleri ekleyin.\n- Bu komutu kullanmak için 'mesajları yönet' iznine sahip olmanız gerekir.",
+  "log_channel_confirm": "Kayıt kanalı ayarlandı:",
+  "log_channel_admin_only": "Üzgünüz, ancak bu komut yalnızca yöneticiler içindir.",
+  "log_channel_error": "Üzgünüz, bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+  "categories": {
+    "sexual": "Cinsel",
+    "sexual/minors": "Cinsel/Çocuklar",
+    "harassment": "Taciz",
+    "harassment/threatening": "Taciz/Tehdit",
+    "hate": "Nefret",
+    "hate/threatening": "Nefret/Tehdit",
+    "illicit": "Yasadışı",
+    "illicit/violent": "Yasadışı/Şiddet",
+    "self-harm": "Kendine zarar verme",
+    "self-harm/intent": "Kendine zarar verme/Niyet",
+    "self-harm/instructions": "Kendine zarar verme/Talimatlar",
+    "violence": "Şiddet",
+    "violence/graphic": "Şiddet/Grafik"
+  },
+  "purge_app_permission_missing": "Uygulamanın mesajları yönetme izni yok.",
+  "purge_user_permission_missing": "Kullanıcının mesajları yönetme izni yok.",
+  "purge_invalid_amount": "Geçersiz temizlik miktarı. 1 ile 100 arasında olmalıdır.",
+  "purge_no_messages": "Silinecek mesaj yok.",
+  "purge_success": "Silinen mesajlar: ",
+  "evaluate_error": "Değerlendirilecek mesaj veya resim yok."
 }

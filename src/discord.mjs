@@ -32,9 +32,9 @@ export const createAndLoginDiscordClient = async ({
             GatewayIntentBitsObj.Guilds,
             GatewayIntentBitsObj.GuildMessages,
             GatewayIntentBitsObj.MessageContent,
-            GatewayIntentBitsObj.GuildMembers,
-            GatewayIntentBitsObj.GuildPresences,
-            GatewayIntentBitsObj.GuildVoiceStates,
+            //GatewayIntentBitsObj.GuildMembers,
+            //GatewayIntentBitsObj.GuildPresences,
+            //GatewayIntentBitsObj.GuildVoiceStates,
         ],
         partials,
         ...clientOptions

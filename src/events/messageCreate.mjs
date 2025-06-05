@@ -21,31 +21,44 @@ export default async function (message) {
 
         // Moderation results array
         let moderationResults = [];
+        const moderationPromises = [];
 
         // Moderate text (if present)
         if (text && text.trim().length > 0) {
-            const moderation = await moderateMessageContent(text, []);
-            if (moderation && moderation.results) {
-                moderationResults.push({ moderation, type: 'text', text });
-            }
+            moderationPromises.push(
+                moderateMessageContent(text, []).then(moderation =>
+                    moderation && moderation.results ? { moderation, type: 'text', text } : null
+                )
+            );
         }
         // Moderate each image (with no text)
         for (const url of imageUrls) {
-            const moderation = await moderateMessageContent('', [url]);
-            if (moderation && moderation.results) {
-                moderationResults.push({ moderation, type: 'image', url });
-            }
+            moderationPromises.push(
+                moderateMessageContent('', [url]).then(moderation =>
+                    moderation && moderation.results ? { moderation, type: 'image', url } : null
+                )
+            );
         }
 
+        // Await all moderation requests in parallel
+        const moderationResultsRaw = await Promise.all(moderationPromises);
+        moderationResults = moderationResultsRaw.filter(Boolean);
+
         // Aggregate flagged results
-        const flagged = moderationResults.flatMap(({ moderation, type, text, url }) =>
-            moderation.results.filter(r => r.flagged).map(r => ({ result: r, type, text, url }))
-        );
-        if (flagged.length === 0) return;
+        let textFlagged = [];
+        let imageFlagged = [];
+        moderationResults.forEach(({ moderation, type, text, url }) => {
+            const flagged = moderation.results.filter(r => r.flagged).map(r => ({ result: r, type, text, url }));
+            if (type === 'text') textFlagged.push(...flagged);
+            else if (type === 'image') imageFlagged.push(...flagged);
+        });
+        if (textFlagged.length === 0 && imageFlagged.length === 0) return;
 
         const logChannelId = global.logChannels[message.guild.id];
         const categoryNames = getMsg(global.guildLocales?.[message.guild.id], 'categories', {});
-        let violations = flagged.map(({ result, type, text, url }, idx) => {
+        let violations = [];
+        if (textFlagged.length > 0) {
+            const { result, text } = textFlagged[0];
             const cats = Object.entries(result.categories || {})
                 .filter(([cat, val]) => val)
                 .map(([cat]) => {
@@ -54,9 +67,22 @@ export default async function (message) {
                     return `• **${name}**: ${(score * 100).toFixed(1)}%`;
                 })
                 .join("\n");
-            let context = type === 'text' ? (text ? text.substring(0, 300) : '(no text)') : `[Image](${url})`;
-            return `**Flagged ${type === 'text' ? 'Text' : 'Image'}${flagged.length > 1 ? ` #${idx+1}` : ''}:**\n${context}\n${cats}`;
-        }).join("\n\n");
+            let context = text ? text.substring(0, 300) : '(no text)';
+            violations.push(`**Flagged Text:**\n${context}\n${cats}`);
+        }
+        imageFlagged.forEach(({ result, url }, idx) => {
+            const cats = Object.entries(result.categories || {})
+                .filter(([cat, val]) => val)
+                .map(([cat]) => {
+                    const score = result.category_scores?.[cat] || 0;
+                    const name = categoryNames[cat] || cat;
+                    return `• **${name}**: ${(score * 100).toFixed(1)}%`;
+                })
+                .join("\n");
+            let context = `[Image ${idx + 1}](${url})`;
+            violations.push(`**Flagged Image ${imageFlagged.length > 1 ? `#${idx + 1}` : ''}:**\n${context}\n${cats}`);
+        });
+        violations = violations.join("\n\n");
 
         const embed = new EmbedBuilder()
             .setColor(0xED4245)

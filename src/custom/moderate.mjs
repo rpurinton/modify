@@ -6,12 +6,13 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export async function moderateMessageContent(text, imageUrls = []) {
     log.debug("Moderating message content:", { text, imageUrls });
+    // Only allow 1 text and 1 image per request as per OpenAI Moderation API
     const input = [];
     if (text && text.trim().length > 0) {
         input.push({ type: "text", text });
     }
-    for (const url of imageUrls) {
-        input.push({ type: "image_url", image_url: { url } });
+    if (imageUrls.length > 0) {
+        input.push({ type: "image_url", image_url: { url: imageUrls[0] } });
     }
     if (input.length === 0) return null;
     try {

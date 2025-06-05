@@ -1,8 +1,8 @@
 {
     "name": "modify",
-    "version": "1.0.9",
+    "version": "1.0.1",
     "type": "module",
-    "description": "a Discord.js template supporting locales with dynamic events and /commands",
+    "description": "A modern Discord.js app using OpenAI Moderations Endpoint",
     "main": "modify.js",
     "scripts": {
         "start": "node modify.js",
@@ -21,10 +21,10 @@
     "author": "Russell Purinton <russell.purinton@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/rpurinton/skeleton.git"
+        "url": "https://github.com/rpurinton/modify.git"
     },
     "bugs": {
-        "url": "https://github.com/rpurinton/skeleton/issues"
+        "url": "https://github.com/rpurinton/modify/issues"
     },
     "license": "MIT",
     "dependencies": {

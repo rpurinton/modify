@@ -1,27 +1,27 @@
 {
-    "help": "\u000d83e\u000dd16 **Modify Yard\u000131m Rehberi**\n\nModify, Discord sunucunuzun g\u0000fczdel\u000131\u00011fini korumak i\u0000e7in burada! Ba\u00015flarken \u00015fu ad\u000131mlar\u000131 izleyin:\n\n\u001f\u0016\u001d\u001f **Destek Sunucusu:** [Modify Destek Sunucusuna Kat\u000131l\u000131n](https://discord.gg/vYuTwaZ999)\n\n\u0000d83d\u0000dd11 **Komut: \\/log_channel**\nBu komutla, Modify'nin nefret s\u0000f6ylemi, tehditler, taciz, \u0000f6z-k\u0000e7\u000131k\u000131m, cinsel i\u0000e7erik veya \u00015fiddet i\u0000e7eren iletileri tespit etti\u00011fi zaman uyar\u000131 g\u0000f6nderece\u00011fi kanal\u000131 belirlersiniz.\n\n**Log Kanal\u000131n\u000131 Ayarlama:**\n1. Modify uyar\u000131lar\u000131 i\u0000e7in yeni bir kanal olu\u00015fturun veya mevcut kanallardan birini se\u0000e7in.\n2. Modify'nin bu kanala mesaj g\u0000f6nderebilmesi i\u0000e7in izinleri olduğundan emin olun.\n3. Belirlenen kanalda `\\/log_channel` yaz\u000131n ve o kanal\u000131 log kanalı olarak ayarlam\u000131\u00015 olun.\n\n\u000178\u000131\u00015f\u000131\u00011f\u000131! Modify Art\u000131k iletiler tespit edildi\u00011finde log kanal\u000131na bildirim g\u0000f6nderecek. Log kanal\u000131 ayarlamak i\u0000e7in sunucu y\u0000f6netme iznine sahip olman\u000131z gerekir.\n\n\u0000d83d\u0000de80 *Gelecek Planlar:*\n- \u000130\u0000e7erik kategorileri i\u0000e7in \u0000f6zel e\u00015fitlik d\u0000fczeyleri.\n- Farkl\u000131 kanal ve roller i\u0000e7in \u0000f6zelle\u00015ftirilmi\u00015 politikalar.\n- Tekrar eden ihlaller i\u0000e7in yapt\u000131r\u000131m politikalar\u000131.\n\nG\u0000fcncellemeler i\u0000e7in takipte kal\u000131n!\n\nDaha fazla yard\u000131ma m\u000131 ihtiyac\u000131n\u000131z var? **Modify'i kulland\u000131\u00011f\u000131n\u000131z i\u0000e7in te\u00015fekk\u0000fcr ederiz! G\u0000fczel bir topluluk olu\u00015ftural\u000131m.**\n\n\u0000f0\u0009b\u000088 **Komut: \\/purge**\nBu komutla bir kanaldaki iletileri topluca silebilirsiniz. 1-100 aras\u000131nda iletiler say\u000131s\u000131n\u000131 belirtebilir, i\u0000e7erik, kullan\u000131c\u000131, uygulamalardan gelen veya embed i\u0000e7eren iletiler gibi filtreler ekleyebilirsiniz.\n\n**\\/purge Nas\u000131l Kullan\u000131l\u000131r:**\n- `/purge amount:<number>` — Son 100 iletiden kadar siler.\n- Opsiyonel: Belirli iletileri hedeflemek i\u0000e7in `contains:<text>`, `user:<user>`, `apps:true` veya `embeds:true` filtrelerini ekleyin.\n- Bu komutu kullanmak i\u0000e7in 'mesajlar\u000131 y\u0000f6net' iznine sahip olmal\u000131s\u000131n\u000131z.\n",
-    "log_channel_confirm": "Log kanalı olarak ayarlandı",
-    "log_channel_admin_only": "\u0000dczg\u0000fcn\u0000fcm, bu komut sadece y\u0000f6neticiler i\u0000e7indir.",
-    "log_channel_error": "\u0000dczg\u0000fcn\u0000fcm, i\u00015flem s\u000131ras\u000131nda bir hata olu\u00015ftu. L\u0000fctfen daha sonra tekrar deneyin.",
+    "help": "🤖 **Modify Yardım Kılavuzu**\n\nModify, Discord sunucunuzu güvende tutmak için burada! Başlamak için işte yapmanız gerekenler:\n\n🔗 **Destek Sunucusu:** [Modify Destek Sunucusuna Katıl](https://discord.gg/vYuTwaZ999)\n\n🔑 **Komut: /log_channel**\nBu komutu kullanarak, Modify'nin nefret söylemi, tehditler, taciz, kendine zarar verme, cinsel içerik veya şiddet içeren mesajlar için uyarılar göndereceği bir kanal belirleyin.\n\n**Log Kanalınızı Ayarlamak:**\n1. Modify uyarıları için yeni bir kanal oluşturun (veya mevcut birini seçin).\n2. Modify'nin orada mesaj göndermesi için izin aldığından emin olun.\n3. Log kanalınızı ayarlamak için belirlenen kanalda ` /log_channel ` yazın.\n\n✨ Hepsi bu kadar! Modify, bir mesaj işaretlendiğinde log kanalınıza bildirim gönderecek. Log kanalını ayarlamak için 'sunucuyu yönet' izinlerine sahip olmanız gerektiğini unutmayın.\n\n🚀 *Gelecek Planları:*\n- İçerik kategorileri için özel eşik seviyeleri.\n- Farklı kanallar ve roller için özelleştirilmiş politikalar.\n- Tekrar eden ihlaller için ceza politikaları.\n\nGüncellemeler için takipte kalın!\n\nDaha fazla yardıma mı ihtiyacınız var? **Modify'yi kullandığınız için teşekkür ederiz! Güvenli bir topluluk oluşturalım.**\n\n🧹 **Komut: /purge**\nBu komutu kullanarak bir kanaldaki mesajları toplu olarak silin. Silinecek mesaj sayısını (1-100) belirtebilir, içerik, kullanıcı, uygulamalardan gelen mesajlar veya gömülü içerik içeren mesajları filtreleyebilirsiniz.\n\n**/purge Nasıl Kullanılır:**\n- `/purge amount:<number>` — En fazla 100 son mesajı silin.\n- Opsiyonel: Belirli mesajları hedeflemek için `contains:<text>`, `user:<user>`, `apps:true` veya `embeds:true` gibi filtreler ekleyin.\n- Bu komutu kullanmak için 'mesajları yönet' iznine sahip olmalısınız.\n",
+    "log_channel_confirm": "Log kanalı ayarlandı",
+    "log_channel_admin_only": "Üzgünüm, ama bu komut yalnızca yöneticiler içindir.",
+    "log_channel_error": "Üzgünüm, ama bizim tarafımızda bir sorun oluştu. Lütfen daha sonra tekrar deneyin.",
     "categories": {
         "sexual": "Cinsel",
-        "sexual/minors": "Cinsel/Re\u00015fit Olmayanlar",
+        "sexual/minors": "Cinsel/Minörler",
         "harassment": "Taciz",
         "harassment/threatening": "Taciz/Tehdit",
         "hate": "Nefret",
         "hate/threatening": "Nefret/Tehdit",
-        "illicit": "\u000130llegal",
-        "illicit/violent": "\u000130llegal/\u00015fiddet",
+        "illicit": "Yasa Dışı",
+        "illicit/violent": "Yasa Dışı/Şiddet",
         "self-harm": "Kendine Zarar",
         "self-harm/intent": "Kendine Zarar/Niyet",
-        "self-harm/instructions": "Kendine Zarar/ Talimatlar",
-        "violence": "\u00015eiddet",
-        "violence/graphic": "\u00015eiddet/Detayl\u000131"
+        "self-harm/instructions": "Kendine Zarar/Talimatlar",
+        "violence": "Şiddet",
+        "violence/graphic": "Şiddet/Grafik"
     },
-    "purge_app_permission_missing": "Uygulaman\u000131n mesajlar\u000131 y\u0000f6netme izni eksik.",
-    "purge_user_permission_missing": "Kullan\u000131c\u000131n\u000131n mesajlar\u000131 y\u0000f6netme izni yok.",
-    "purge_invalid_amount": "Ge\u0000e7ersiz silme miktar\u000131. 1 ile 100 aras\u000131nda olmal\u000131.",
-    "purge_no_messages": "Silinecek ileti bulunamad\u000131.",
-    "purge_success": "Silinen iletiler: ",
-    "evaluate_error": "De\u00011ferlendirilecek ileti veya resim yok."
+    "purge_app_permission_missing": "Uygulamanın mesajları yönetme izni yok.",
+    "purge_user_permission_missing": "Kullanıcının mesajları yönetme izni yok.",
+    "purge_invalid_amount": "Geçersiz temizleme miktarı. 1 ile 100 arasında olmalıdır.",
+    "purge_no_messages": "Silinecek mesaj yok.",
+    "purge_success": "Silinen mesajlar: ",
+    "evaluate_error": "Değerlendirilecek mesaj veya resim yok."
 }

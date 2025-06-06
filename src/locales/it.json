@@ -1,8 +1,8 @@
 {
-    "help": "\u0007616 **Guida alla Modifica**\n\nModify \u0000e8 qui per mantenere sicuro il tuo server Discord! Ecco come iniziare:\n\n🔗 **Server di supporto:** [Unisciti al server di supporto Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f511 **Comando: \\/log_channel**\nUsa questo comando per designare un canale dove Modify invier\u0000e0 avvisi per messaggi rilevati contenenti discorsi di odio, minacce, molestie, auto-danno, contenuti sessuali o violenza.\n\n**Impostare il canale per i log:**\n1. Crea un nuovo canale (o scegli uno esistente) per gli avvisi di Modify.\n2. Assicurati che Modify abbia il permesso di inviare messaggi li.\n3. Inserisci `\\/log_channel` nel canale designato per impostarlo come canale log.\n\n\u0002628e; Fatto! Modify invier\u0000e0 ora notifiche nel tuo canale log se un messaggio viene rilevato. Ricorda, devi avere i permessi di 'gestione server' per impostare il canale log.\n\n\u001f680 *Piani futuri:*\n- Livelli di soglia personalizzati per le categorie di contenuto.\n- Politiche su misura per diversi canali e ruoli.\n- Politiche di punizione per violazioni ripetute.\n\nResta sintonizzato per aggiornamenti!\n\nHai bisogno di pi\u0000f9 aiuto? **Grazie per usare Modify! Creiamo insieme una comunit\u0000e0 sicura.**\n\n\u001f9f9\u0000b7 **Comando: /purge**\nUsa questo comando per eliminare in massa i messaggi in un canale. Puoi specificare il numero di messaggi da cancellare (1-100), filtrare per contenuto, utente, messaggi da app o messaggi contenenti embed.\n\n**Come usare /purge:**\n- `/purge amount:<number>` — Elimina fino a 100 messaggi recenti.\n- Opzionale: Aggiungi filtri come `contains:<text>`, `user:<user>`, `apps:true` o `embeds:true` per mirare messaggi specifici.\n- Devi avere il permesso di 'gestione messaggi' per usare questo comando.\n",
-    "log_channel_confirm": "Canale log impostato su",
-    "log_channel_admin_only": "Mi dispiace, ma questo comando \u0000e8 riservato agli amministratori.",
-    "log_channel_error": "Mi dispiace, ma si \u0000e8 verificato un problema dal nostro lato. Riprova pi\u0000f9 tardi.",
+    "help": "🤖 **Guida alla Modifica**\n\nModify è qui per mantenere il tuo server Discord al sicuro! Ecco come iniziare:\n\n🔗 **Server di Supporto:** [Unisciti al Server di Supporto di Modify](https://discord.gg/vYuTwaZ999)\n\n🔑 **Comando: /log_channel**\nUsa questo comando per designare un canale dove Modify invierà avvisi per i messaggi segnalati contenenti discorsi d'odio, minacce, molestie, autolesionismo, contenuti sessuali o violenza.\n\n**Impostare il tuo Canale di Log:**\n1. Crea un nuovo canale (o scegli uno esistente) per gli avvisi di Modify.\n2. Assicurati che Modify abbia il permesso di inviare messaggi lì.\n3. Inserisci `/log_channel` nel canale designato per impostarlo come tuo canale di log.\n\n✨ Ecco fatto! Modify ora invierà notifiche al tuo canale di log se un messaggio viene segnalato. Ricorda, hai bisogno dei permessi 'gestire server' per impostare il canale di log.\n\n🚀 *Piani Futuri:*\n- Livelli di soglia personalizzati per categorie di contenuto.\n- Politiche su misura per diversi canali e ruoli.\n- Politiche di punizione per violazioni ripetute.\n\nRimani sintonizzato per aggiornamenti!\n\nHai bisogno di ulteriore aiuto? **Grazie per utilizzare Modify! Creiamo insieme una comunità sicura.**\n\n🧹 **Comando: /purge**\nUsa questo comando per eliminare in blocco i messaggi in un canale. Puoi specificare il numero di messaggi da eliminare (1-100), filtrare per contenuto, utente, messaggi da app o messaggi contenenti embed.\n\n**Come Usare /purge:**\n- `/purge amount:<number>` — Elimina fino a 100 messaggi recenti.\n- Facoltativo: Aggiungi filtri come `contains:<text>`, `user:<user>`, `apps:true` o `embeds:true` per mirare a messaggi specifici.\n- Hai bisogno del permesso 'gestire messaggi' per usare questo comando.\n",
+    "log_channel_confirm": "Canale di log impostato su",
+    "log_channel_admin_only": "Mi dispiace, ma questo comando è riservato solo agli amministratori.",
+    "log_channel_error": "Mi dispiace, ma qualcosa è andato storto dalla nostra parte. Per favore riprova più tardi.",
     "categories": {
         "sexual": "Sessuale",
         "sexual/minors": "Sessuale/Minori",
@@ -10,18 +10,18 @@
         "harassment/threatening": "Molestie/Minacciose",
         "hate": "Odio",
         "hate/threatening": "Odio/Minacciose",
-        "illicit": "Illecite",
-        "illicit/violent": "Illecite/Violente",
-        "self-harm": "Auto-danno",
-        "self-harm/intent": "Auto-danno/Intento",
-        "self-harm/instructions": "Auto-danno/Istruzioni",
+        "illicit": "Illeciti",
+        "illicit/violent": "Illeciti/Violenti",
+        "self-harm": "Autolesionismo",
+        "self-harm/intent": "Autolesionismo/Intenzioni",
+        "self-harm/instructions": "Autolesionismo/Istruzioni",
         "violence": "Violenza",
         "violence/graphic": "Violenza/Grafica"
     },
     "purge_app_permission_missing": "L'app non ha il permesso di gestire i messaggi.",
     "purge_user_permission_missing": "L'utente non ha il permesso di gestire i messaggi.",
-    "purge_invalid_amount": "Quantit\u0000e0 per la cancellazione non valida. Deve essere tra 1 e 100.",
+    "purge_invalid_amount": "Importo di purga non valido. Deve essere compreso tra 1 e 100.",
     "purge_no_messages": "Nessun messaggio da eliminare.",
-    "purge_success": "Messaggi cancellati: ",
+    "purge_success": "Messaggi eliminati: ",
     "evaluate_error": "Nessun messaggio o immagine da valutare."
 }

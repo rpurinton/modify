@@ -1,27 +1,27 @@
 {
-    "help": "\u00129 Modify er her for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0din Discord-server sikker! Her er hvordan du kommer i gang:\n\n\u001F517 **Support-server:** [Bli med i Modify Support-serveren](https://discord.gg/vYuTwaZ999)\n\n\u001F511 **Kommando: /log_channel**\nBruk denne kommandoen for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0kanal der Modify sender varsler for meldinger som flagges for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0hetsspr\u0005F0k, trusler, trakassering, selvskading, seksuelt innhold eller vold.\n\n**Slik setter du opp loggkanalen din:**\n1. Opprett en ny kanal (eller velg en eksisterende) for Modify-varsler.\n2. Sikre at Modify har tillatelse til \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0mldinger der.\n3. Skriv inn `/log_channel` i den valgte kanalen for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0kanal.\n\n\u001F31F Det er det! Modify vil n\u0000E5 sende varsler til loggkanalen hvis en melding blir flagget. Husk, du trenger 'administrer server' tillatelse for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0loggkanalen.\n\n\u001F680 *Fremtidige planer:*\n- Tilpassede terskelniv\u0000E5er for innholdskategorier.\n- Skreddersydde retningslinjer for ulike kanaler og roller.\n- Sanksjoner ved gjentatte brudd.\n\nF\u0000F8lg med for oppdateringer!\n\nTrenger du mer hjelp? **Takk for at du bruker Modify! La oss skape et trygt fellesskap sammen.**\n\n\u001F9F9 **Kommando: /purge**\nBruk denne kommandoen for masseleting av meldinger i en kanal. Du kan spesifisere antall meldinger som skal slettes (1-100), filtrere etter innhold, bruker, meldinger fra apper eller meldinger som inneholder innebygde elementer.\n\n**Slik bruker du /purge:**\n- `/purge amount:<nummer>` — Slett opptil 100 nylige meldinger.\n- Valgfritt: Legg til filtre som `contains:<tekst>`, `user:<bruker>`, `apps:true`, eller `embeds:true` for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0specifikke meldinger.\n- Du trenger 'administrer meldinger' tillatelse for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0kommandoen.\n",
+    "help": "🤖 **Modifiser Hjelpeguide**\n\nModifiser er her for å holde Discord-serveren din trygg! Slik kommer du i gang:\n\n🔗 **Støtteserver:** [Bli med i Modifiser Støtteserver](https://discord.gg/vYuTwaZ999)\n\n🔑 **Kommando: /log_channel**\nBruk denne kommandoen for å angi en kanal der Modifiser vil sende varsler for meldinger som er flagget for å inneholde hatprat, trusler, trakassering, selvskading, seksuelt innhold eller vold.\n\n**Slik setter du opp loggkanalen:**\n1. Opprett en ny kanal (eller velg en eksisterende) for Modifiser-varsler.\n2. Sørg for at Modifiser har tillatelse til å sende meldinger der.\n3. Skriv `/log_channel` i den angitte kanalen for å sette den som loggkanal.\n\n✨ Det er alt! Modifiser vil nå sende varsler til loggkanalen din hvis en melding blir flagget. Husk, du trenger 'administrere server' tillatelser for å sette loggkanalen.\n\n🚀 *Fremtidige planer:*\n- Tilpassede terskelnivåer for innholdskategorier.\n- Skreddersydde retningslinjer for forskjellige kanaler og roller.\n- Straffereglene for gjentatte brudd.\n\nHold deg oppdatert for nyheter!\n\nTrenger du mer hjelp? **Takk for at du bruker Modifiser! La oss skape et trygt fellesskap sammen.**\n\n🧹 **Kommando: /purge**\nBruk denne kommandoen for å slette meldinger i bulk i en kanal. Du kan spesifisere antall meldinger som skal slettes (1-100), filtrere etter innhold, bruker, meldinger fra apper, eller meldinger som inneholder innebyggede elementer.\n\n**Slik bruker du /purge:**\n- `/purge amount:<number>` — Slett opptil 100 nylige meldinger.\n- Valgfritt: Legg til filtre som `contains:<text>`, `user:<user>`, `apps:true`, eller `embeds:true` for å målrette spesifikke meldinger.\n- Du trenger 'administrere meldinger' tillatelse for å bruke denne kommandoen.\n",
     "log_channel_confirm": "Loggkanal satt til",
     "log_channel_admin_only": "Beklager, men denne kommandoen er kun for administratorer.",
-    "log_channel_error": "Beklager, men noe gikk galt hos oss. Vennligst prøv igjen senere.",
+    "log_channel_error": "Beklager, men noe gikk galt på vår side. Vennligst prøv igjen senere.",
     "categories": {
         "sexual": "Seksuelt",
-        "sexual/minors": "Seksuelt/Mindre\u0005F0rige",
+        "sexual/minors": "Seksuelt/Minorer",
         "harassment": "Trakassering",
         "harassment/threatening": "Trakassering/Truende",
         "hate": "Hat",
         "hate/threatening": "Hat/Truende",
-        "illicit": "Ul\u0005F0ovlig",
-        "illicit/violent": "Ul\u0005F0ovlig/Voldelig",
+        "illicit": "Ulovlig",
+        "illicit/violent": "Ulovlig/Voldelig",
         "self-harm": "Selvskading",
-        "self-harm/intent": "Selvskading/Hensikt",
+        "self-harm/intent": "Selvskading/Intensjon",
         "self-harm/instructions": "Selvskading/Instruksjoner",
         "violence": "Vold",
         "violence/graphic": "Vold/Grafisk"
     },
-    "purge_app_permission_missing": "App mangler tillatelsen til \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0admimnistrere meldinger.",
-    "purge_user_permission_missing": "Bruker mangler tillatelsen til \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0admimnistrere meldinger.",
-    "purge_invalid_amount": "Ugyldig antall for \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0masseleting. M\u0005F0ste v\u0005F8re mellom 1 og 100.",
-    "purge_no_messages": "Ingen meldinger \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0slette.",
+    "purge_app_permission_missing": "Appen mangler tillatelsen til å administrere meldinger.",
+    "purge_user_permission_missing": "Brukeren mangler tillatelsen til å administrere meldinger.",
+    "purge_invalid_amount": "Ugyldig slettemengde. Må være mellom 1 og 100.",
+    "purge_no_messages": "Ingen meldinger å slette.",
     "purge_success": "Slettede meldinger: ",
-    "evaluate_error": "Ingen meldinger eller bilder \u0005F\u0005F\u0005F00\u0005F00\u0005F00\u0005F0vurdere."
+    "evaluate_error": "Ingen meldinger eller bilder å evaluere."
 }

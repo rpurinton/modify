@@ -4,6 +4,7 @@ A modern, open-source Discord moderation app powered by OpenAI Moderation API. A
 
 - **Project website:** [https://modify.purinton.us](https://modify.purinton.us)
 - **Invite the official Modify app to your server:** [Invite Modify to your Discord server](https://discord.com/oauth2/authorize?client_id=1351917584613638235)
+- **Support Server:** [Join the Modify Support Server](https://discord.gg/vYuTwaZ999)
 
 ---
 

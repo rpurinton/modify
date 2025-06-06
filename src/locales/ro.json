@@ -1,27 +1,27 @@
 {
-    "help": "\u00138e \u0013816 **Ghid de Ajutor Modify**\n\nModify este aici pentru a men\u00021ine serverul t\u000103u Discord sigur! Iat\u000103 cum s\u000103 începi:\n\n\u001f517 **Server Suport:** [Al\u000103tur\u000103-te Serverului de Suport Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f514 **Comand\u000103: \\/log_channel**\nFolose\u00021te aceast\u000103 comand\u000103 pentru a desemna un canal unde Modify va trimite alerte pentru mesajele marcate ca fiind discurs de ur\u000103, amenin\u00021\u000102ri, h\u000103r\u00021uire, auto-v\u000103t\u000103mare, con\u00021inut sexual sau violen\u00021\u000102.\n\n**Configurarea Canalului de Log:**\n1. Creeaz\u000103 un canal nou (sau alege unul existent) pentru alertele Modify.\n2. Asigur\u000103-te c\u000103 Modify are permisiunea de a trimite mesaje acolo.\n3. Introdu `\\/log_channel` \u0000n canalul desemnat pentru a-l seta ca canal de log.\n\n\u001f31f Asta e tot! Modify va trimite acum notific\u000102ri la canalul tau de log dac\u000102 un mesaj este marcat. Ai nevoie de permisiunea 'gestionare server' pentru a seta canalul de log.\n\n\u001f680 *Planuri viitoare:*\n- Niveluri de prag personalizabile pentru categorii de con\u00021inut.\n- Politici adaptate pentru diferite canale \u00021i roluri.\n- Politici de p\u0000e4r\u0000e5tire pentru încălc\u000102ri repetate.\n\nR\u0000e4m\u0000e2i pe faz\u0000e4 pentru nout\u0000e4\u00021i!\n\nAi nevoie de mai mult ajutor? **Mul\u00021umim c\u000102 folose\u00021ti Modify! S\u000102 cre\u00010dem o comunitate sigur\u000102 \u0000mpreun\u000102.**\n\n\u001f9f9 **Comand\u000103: /purge**\nFolose\u00021te aceast\u000103 comand\u000103 pentru a \u00021terge mesaje \u0000n mas\u000103 dintr-un canal. Po\u00021i specifica num\u000102rul de mesaje de \u00021ters (1-100), filtra dup\u000102 con\u00021inut, utilizator, mesaje de la aplica\u00021ii sau mesaje ce con\u00021in embed-uri.\n\n**Cum s\u000102 folose\u00021ti /purge:**\n- `/purge amount:<num\u000102r>` — \u00021terge p\u0000e2n\u000102 la 100 de mesaje recente.\n- Op\u00021ional: Adaug\u000102 filtre ca `contains:<text>`, `user:<user>`, `apps:true`, sau `embeds:true` pentru a viza mesaje specifice.\n- Ai nevoie de permisiunea 'gestionare mesaje' pentru a folosi aceast\u000103 comand\u000103.\n",
-    "log_channel_confirm": "Canalul de log setat la",
-    "log_channel_admin_only": "\u00138mi pare r\u0000e4u, dar aceast\u000103 comand\u000103 este doar pentru administratori.",
-    "log_channel_error": "\u00138mi pare r\u0000e4u, dar ceva nu a mers bine de partea noastr\u000102. Te rog încearc\u000102 din nou mai târziu.",
+    "help": "\u00128 Modify Help Guide\u00129\n\nModify este aici pentru a menține serverul tău Discord în siguranță! Iată cum să începi:\n\n\u001f\u001f Support Server: [Al\u00022i\u00021ng\u00024\u00021 la serverul de suport Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f\u001f Comand\u00022: \\/log_channel\nFolosește această comandă pentru a desemna un canal unde Modify va trimite alerte pentru mesaje identificate ca con\u00021n\u00022nd discurs de ur\u00022\u00025, amenin\u00021\u00025ri, h\u00025rtuire, auto-v\u00025ftrare, con\u00021inut sexual sau violen\u00021\u00025.\n\nSetarea canalului de logare:\n1. Creeaz\u00022 un canal nou (sau alege unul existent) pentru alertele Modify.\n2. Asigur\u00022-te c\u00022 Modify are permisiunea de a trimite mesaje acolo.\n3. Introdu `\\/log_channel` \u0000n canalul desemnat pentru a-l seta ca log channel.\n\n\u001f\u001f Gata! Modify va trimite notific\u00022ri canalului t\u00022u log dac\u00022 un mesaj este identificat ca problematic. Ai nevoie de permisiunea 'manage server' pentru a seta canalul de log.\n\n\u001f\u001f Planuri de viitor:\n- Niveluri personalizate pentru pragurile de con\u00021inut.\n- Politici adaptate pentru canale \u00021i roluri.\n- Politici de pedeaps\u00022 pentru abateri repetate.\n\nR\u00022m\u00022ne\u00021i la curent cu actualiz\u00022rile!\n\nAi nevoie de mai mult ajutor? \u001f\u001f Mul\u00021umim c\u00022 folose\u00021ti Modify! S\u00022 cre\u00021m \u0000mpreun\u00022 o comunitate sigur\u00022.\n\n\u001f\u001f Comand\u00022: /purge\nFolose\u00021te aceast\u00022 comand\u00022 pentru a \u00021n ceputa mesaje \u00021ntr-un canal. Po\u00021i specifica num\u00022rul de mesaje de \u00021nl\u00022turat (1-100), filtra dup\u00022 con\u00021inut, utilizator, mesaje din aplica\u00020ii sau mesaje cu embed-uri.\n\nCum s\u00022 folose\u00021ti /purge:\n- `/purge amount:<number>` — \u00021nl\u00022tur\u00022 p\u00021n\u00022 la 100 de mesaje recente.\n- Op\u00021ional: Adaug\u00022 filtre precum `contains:<text>`, `user:<user>`, `apps:true`, sau `embeds:true` pentru mesaje specifice.\n- Ai nevoie de permisiunea 'manage messages' pentru a folosi comanda.\n",
+    "log_channel_confirm": "Canalul de log a fost setat la",
+    "log_channel_admin_only": "\u00128mi pare r\u000251u, dar aceast\u00022 comand\u00022 este doar pentru administratori.",
+    "log_channel_error": "\u00128mi pare r\u000251u, dar a ap\u00022rut o eroare. Te rog s\u00022 \u0000ncerci din nou mai t\u00022rziu.",
     "categories": {
         "sexual": "Sexual",
         "sexual/minors": "Sexual/Minori",
-        "harassment": "H\u000103r\u00021uire",
-        "harassment/threatening": "H\u000103r\u00021uire/Amenin\u00021\u000102ri",
+        "harassment": "H\u00025rtuire",
+        "harassment/threatening": "H\u00025rtuire/Amenin\u00021\u00025toare",
         "hate": "Ura",
-        "hate/threatening": "Ura/Amenin\u00021\u000102ri",
+        "hate/threatening": "Ura/Amenin\u00021\u00025toare",
         "illicit": "Illicit",
         "illicit/violent": "Illicit/Violent",
-        "self-harm": "Auto-V\u000103t\u000103mare",
-        "self-harm/intent": "Auto-V\u000103t\u000103mare/Intent",
-        "self-harm/instructions": "Auto-V\u000103t\u000103mare/Instruc\u00021iuni",
-        "violence": "Violen\u00021\u000102",
-        "violence/graphic": "Violen\u00021\u000102/Grafic"
+        "self-harm": "Auto-v\u00025ftrare",
+        "self-harm/intent": "Auto-v\u00025ftrare/Intent",
+        "self-harm/instructions": "Auto-v\u00025ftrare/Instruc\u00021iuni",
+        "violence": "Violen\u00021\u00022",
+        "violence/graphic": "Violen\u00021\u00022/Grafic"
     },
     "purge_app_permission_missing": "Aplica\u00021ia nu are permisiunea de a gestiona mesajele.",
     "purge_user_permission_missing": "Utilizatorul nu are permisiunea de a gestiona mesajele.",
-    "purge_invalid_amount": "Cantitate incorect\u000102 pentru purge. Trebuie s\u000102 fie \u0000ntre 1 \u00021i 100.",
-    "purge_no_messages": "Nu sunt mesaje de \u00021ters.",
-    "purge_success": "Mesaje \u00021terse: ",
-    "evaluate_error": "Nu sunt mesaje sau imagini de evaluat."
+    "purge_invalid_amount": "Cantitate invalid\u00022 pentru purge. Trebuie s\u00022 fie \u00021ntre 1 \u00021i 100.",
+    "purge_no_messages": "Nu exist\u00022 mesaje de \u00021nl\u00022turat.",
+    "purge_success": "Mesaje \u00021nl\u00022turate: ",
+    "evaluate_error": "Nu exist\u00022 mesaje sau imagini de evaluat."
 }

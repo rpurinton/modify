@@ -1,13 +1,13 @@
 {
-    "help": "\u0012eaanpassen Help Gids\u0012\n\nModify is hier om je Discord-server veilig te houden! Hier is hoe je kunt beginnen:\n\n\u0006 Ondersteuningsserver: [Sluit je aan bij de Modify Support Server](https://discord.gg/vYuTwaZ999)\n\n\u001e Commando: \u001e/log_channel\u001e\nGebruik dit commando om een kanaal aan te wijzen waar Modify waarschuwingen zal sturen voor berichten die worden gemarkeerd vanwege haatzaaien, bedreigingen, intimidatie, zelfbeschadiging, seksuele inhoud of geweld.\n\n\u001eJe logkanaal instellen:\n1. Maak een nieuw kanaal aan (of kies een bestaand kanaal) voor Modify-alerts.\n2. Zorg dat Modify toestemming heeft om berichten daar te sturen.\n3. Typ \"/log_channel\" in het geselecteerde kanaal om het als logkanaal in te stellen.\n\n\u001e Klaar! Modify zal nu meldingen naar je logkanaal sturen als een bericht wordt gemarkeerd. Vergeet niet, je hebt 'server beheren' rechten nodig om het logkanaal in te stellen.\n\n\u001e Toekomstplannen:\n- Aangepaste drempelwaarden voor inhoudscategorie\u0000n.\n- Op maat gemaakte beleidsregels voor verschillende kanalen en rollen.\n- Strafbeleidsregels voor herhaalde overtredingen.\n\nBlijf op de hoogte voor updates!\n\nMeer hulp nodig? **Bedankt dat je Modify gebruikt! Laten we samen een veilige community creëren.**\n\n\u001e Commando: /purge\nGebruik dit commando om in bulk berichten te verwijderen in een kanaal. Je kunt het aantal te verwijderen berichten specificeren (1-100), filteren op inhoud, gebruiker, berichten van apps, of berichten met embeds.\n\n\u001eHoe te gebruiken /purge:\n- `/purge amount:<number>` \u0012 Verwijdert tot 100 recente berichten.\n- Optioneel: Voeg filters toe zoals `contains:<text>`, `user:<user>`, `apps:true`, of `embeds:true` om specifieke berichten te targeten.\n- Je hebt 'berichten beheren' rechten nodig om dit commando te gebruiken.\n",
+    "help": "\u000aModify is er om je Discord-server veilig te houden! Hier is hoe je aan de slag gaat:\n\n\u001fSupport Server: [Word lid van de Modify Support Server](https://discord.gg/vYuTwaZ999)\n\n\u001fCommand: /log_channel\nGebruik dit commando om een kanaal aan te duiden waar Modify waarschuwingen zal sturen voor berichten die worden gemarkeerd vanwege haatspraak, bedreigingen, pesterijen, zelfbeschadiging, seksuele inhoud of geweld.\n\nInstellen van je logkanaal:\n1. Maak een nieuw kanaal aan (of kies een bestaand kanaal) voor Modify waarschuwingen.\n2. Zorg dat Modify toestemming heeft om berichten daar te sturen.\n3. Voer /log_channel in het aangewezen kanaal in om het als je logkanaal te defini\u00195eren.\n\nDat is het! Modify zal nu notificaties naar je logkanaal sturen als een bericht wordt gemarkeerd. Je hebt 'server beheren' rechten nodig om het logkanaal in te stellen.\n\nToekomstplannen:\n- Aangepaste drempelniveaus voor inhoudscategorie\u00195n.\n- Op maat gemaakte beleidsregels voor verschillende kanalen en rollen.\n- Strafbeleid voor herhaalde overtredingen.\n\nBlijf op de hoogte voor updates!\n\nMeer hulp nodig? Dank je voor het gebruiken van Modify! Laten we samen een veilige community creëren.\n\n\u001fCommando: /purge\nGebruik dit commando om in bulk berichten te verwijderen uit een kanaal. Je kunt het aantal te verwijderen berichten (1-100) specificeren, filteren op inhoud, gebruiker, berichten van apps of berichten met embeds.\n\nHoe /purge te gebruiken:\n- /purge amount:<aantal> — Verwijder tot 100 recente berichten.\n- Optioneel: voeg filters toe zoals contains:<tekst>, user:<gebruiker>, apps:true, of embeds:true om specifieke berichten te targeten.\n- Je hebt 'berichten beheren' rechten nodig om dit commando te gebruiken.\n",
     "log_channel_confirm": "Logkanaal ingesteld op",
     "log_channel_admin_only": "Het spijt me, maar dit commando is alleen voor beheerders.",
     "log_channel_error": "Het spijt me, maar er is iets misgegaan aan onze kant. Probeer het later opnieuw.",
     "categories": {
         "sexual": "Seksueel",
         "sexual/minors": "Seksueel/Minderjarigen",
-        "harassment": "Intimidatie",
-        "harassment/threatening": "Intimidatie/Bedreigend",
+        "harassment": "Pesterijen",
+        "harassment/threatening": "Pesterijen/Bedreigend",
         "hate": "Haat",
         "hate/threatening": "Haat/Bedreigend",
         "illicit": "Illegaal",
@@ -18,9 +18,9 @@
         "violence": "Geweld",
         "violence/graphic": "Geweld/Grafisch"
     },
-    "purge_app_permission_missing": "App heeft geen permissie om berichten te beheren.",
-    "purge_user_permission_missing": "Gebruiker heeft geen permissie om berichten te beheren.",
-    "purge_invalid_amount": "Ongeldig aantal te verwijderen berichten. Moet tussen 1 en 100 zijn.",
+    "purge_app_permission_missing": "De app mist de permissie om berichten te beheren.",
+    "purge_user_permission_missing": "Je mist de permissie om berichten te beheren.",
+    "purge_invalid_amount": "Ongeldig aantal voor purge. Moet tussen 1 en 100 zijn.",
     "purge_no_messages": "Geen berichten om te verwijderen.",
     "purge_success": "Verwijderde berichten: ",
     "evaluate_error": "Geen berichten of afbeeldingen om te evalueren."

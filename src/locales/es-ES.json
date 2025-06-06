@@ -1,8 +1,8 @@
 {
-    "help": "\u001f\u001916 **Gu\u0000eda de ayuda de Modify**\n\n\u001f\u001916 Modify est\u0000e1 aqu\u0000ed para mantener tu servidor de Discord seguro. \u0000a1As\u0000ed es como puedes comenzar!\n\n🔗 **Servidor de soporte:** [Unirse al servidor de soporte de Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f\u001911 **Comando: /log_channel**\nUsa este comando para designar un canal donde Modify enviar\u0000e1 alertas para mensajes marcados por contener discurso de odio, amenazas, acoso, autolesi\u0000f3n, contenido sexual o violencia.\n\n**Configurar tu canal de registro:**\n1. Crea un canal nuevo (o elige uno existente) para las alertas de Modify.\n2. Aseg\u0000farate que Modify tenga permisos para enviar mensajes all\u0000ed.\n3. Escribe `\\/log_channel` en el canal designado para establecerlo como tu canal de registro.\n\n\u001f\u001928 \u0000a1Eso es todo! Modify ahora enviar\u0000e1 notificaciones a tu canal de registro si un mensaje es marcado. Recuerda, necesitas permisos de 'administrar servidor' para establecer el canal de registro.\n\n\u001f\u001280\u0000a0*Planes futuros:*\n- Niveles de umbral personalizados para categor\u0000edas de contenido.\n- Pol\u0000edticas adaptadas para diferentes canales y roles.\n- Pol\u0000edticas de castigo para violaciones repetidas.\n\n\u0000a1Mantente atento a las actualizaciones!\n\n\u001f\u001921 \u0000bfNecesitas m\u0000e1s ayuda? **Gracias por usar Modify! Creamos juntos una comunidad segura.**\n\n🧹 **Comando: /purge**\nUsa este comando para eliminar mensajes en lote en un canal. Puedes especificar la cantidad de mensajes a borrar (1-100), filtrar por contenido, usuario, mensajes de apps, o mensajes que contienen embed.\n\n**C\u0000f3mo usar /purge:**\n- `/purge amount:<n\u0000famero>` \u0000bfBorrar hasta 100 mensajes recientes.\n- Opcional: agrega filtros como `contains:<texto>`, `user:<usuario>`, `apps:true` o `embeds:true` para dirigirte a mensajes espec\u0000edficos.\n- Necesitas permiso de 'administrar mensajes' para usar este comando.\n",
-    "log_channel_confirm": "Canal de registro configurado en",
-    "log_channel_admin_only": "\u001f\u00191f Lo siento, pero este comando es solo para administradores.",
-    "log_channel_error": "\u001f\u00191f Lo siento, pero algo sali\u0000f3 mal en nuestro sistema. Por favor, intenta de nuevo m\u0000e1s tarde.",
+    "help": "\u0012 Modify est\u0000 aqu\u0000 para mantener seguro tu servidor de Discord! As\u0000 como comenzar:\n\n\u001f\u001f\u001f **Servidor de Soporte:** [Une al Servidor de Soporte de Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f\u0011\u0011 **Comando: /log_channel**\nUsa este comando para designar un canal donde Modify enviar\u0000 alertas por mensajes marcados por contener discurso de odio, amenazas, acoso, autolesiones, contenido sexual o violencia.\n\n**Configura tu canal de registros:**\n1. Crea un nuevo canal (o usa uno existente) para alertas de Modify.\n2. Aseg\u0000rate que Modify tenga permiso para enviar mensajes all\u0000.\n3. Escribe `/log_channel` en el canal designado para configurarlo como canal de registros.\n\n\u0016 Ah\u0000 est\u0000! Modify ahora enviar\u0000 notificaciones a tu canal si un mensaje es marcado. Recuerda que necesitas permisos de 'administrar servidor' para configurar el canal.\n\n\u001f\u001f *Planes futuros:*\n- Niveles de umbral personalizables para categor\u0000as de contenido.\n- Pol\u0000ticas personalizadas seg\u0000n canales y roles.\n- Pol\u0000ticas de castigo para violaciones repetidas.\n\n\u0000n Espera actualizaciones!\n\n\u001f\u001f\u001f Necesitas m\u0000s ayuda? **Gracias por usar Modify! Creamos una comunidad segura juntos.**\n\n\u001f\u001f **Comando: /purge**\nUsa este comando para eliminar mensajes en bloque en un canal. Puedes especificar la cantidad (1-100), filtrar por contenido, usuario, mensajes de apps o mensajes con embeds.\n\n**C\u0000mo usar /purge:**\n- `/purge amount:<n\u0000mero>` \u0000 eliminar hasta 100 mensajes recientes.\n- Opcional: Agrega filtros como `contains:<texto>`, `user:<usuario>`, `apps:true`, o `embeds:true` para mensajes espec\u0000ficos.\n- Necesitas permisos de 'administrar mensajes' para usar este comando.\n",
+    "log_channel_confirm": "Canal de registros establecido en",
+    "log_channel_admin_only": "Lo siento, pero este comando es solo para administradores.",
+    "log_channel_error": "Lo siento, pero hubo un error. Por favor, intenta m\u0000s tarde.",
     "categories": {
         "sexual": "Sexual",
         "sexual/minors": "Sexual/Menores",
@@ -10,18 +10,18 @@
         "harassment/threatening": "Acoso/Amenazante",
         "hate": "Odio",
         "hate/threatening": "Odio/Amenazante",
-        "illicit": "Il\u0000edcito",
-        "illicit/violent": "Il\u0000edcito/Violento",
-        "self-harm": "Autolesi\u0000f3n",
-        "self-harm/intent": "Autolesi\u0000f3n/Intenci\u0000f3n",
-        "self-harm/instructions": "Autolesi\u0000f3n/Instrucciones",
+        "illicit": "Il\u0000cito",
+        "illicit/violent": "Il\u0000cito/Violento",
+        "self-harm": "Autolesi\u0000n",
+        "self-harm/intent": "Autolesi\u0000n/Intento",
+        "self-harm/instructions": "Autolesi\u0000n/Instrucciones",
         "violence": "Violencia",
-        "violence/graphic": "Violencia/Gr\u0000e1fica"
+        "violence/graphic": "Violencia/Gr\u0000fica"
     },
-    "purge_app_permission_missing": "La app no tiene permiso para administrar mensajes.",
-    "purge_user_permission_missing": "El usuario no tiene permiso para administrar mensajes.",
-    "purge_invalid_amount": "Cantidad para purgar inv\u0000e1lida. Debe estar entre 1 y 100.",
+    "purge_app_permission_missing": "La app no tiene permisos para administrar mensajes.",
+    "purge_user_permission_missing": "El usuario no tiene permisos para administrar mensajes.",
+    "purge_invalid_amount": "Cantidad inv\u0000lida para borrar. Debe estar entre 1 y 100.",
     "purge_no_messages": "No hay mensajes para eliminar.",
     "purge_success": "Mensajes eliminados: ",
-    "evaluate_error": "No hay mensajes o im\u0000e1genes para evaluar."
+    "evaluate_error": "No hay mensajes ni im\u0000genes para evaluar."
 }

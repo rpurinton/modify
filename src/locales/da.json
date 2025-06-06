@@ -1,27 +1,27 @@
 {
-    "help": "\u000fModify Hj\u0000c6lp Guide\u000e\n\nModify er her for at holde din Discord-server sikker! Her er, hvordan du kommer i gang:\n\n\u001fSupport Server:\n[Join Modify Support Server](https://discord.gg/vYuTwaZ999)\n\n\u001fKommando: /log_channel\nBrug denne kommando til at angive en kanal, hvor Modify sender advarsler for beskeder, der indeholder hadtale, trusler, chikane, selvskade, seksuelt indhold eller vold.\n\n\u001fOps\u0000c6t Din Log Kanal:\n1. Opret en ny kanal (eller v\u0000c6lg en eksisterende) til Modify-advarsler.\n2. S\u0000c6t Modify de rigtige tilladelser til at sende beskeder der.\n3. Indtast `/log_channel` i den valgte kanal for at s\u0000c6tte den som din log kanal.\n\n\u001fS\u0000c6t Det! Modify sender nu notifikationer til din log kanal, hvis en besked bliver markeret. Husk, at du skal have 'administrer server' tilladelser for at s\u0000c6tte log kanalen.\n\n\u001fFremtidsplaner:\n- Selvbestemte gr\u0000c6nse v\u0000c6rdier for indholdskategorier.\n- Tilpassede politikker for forskellige kanaler og roller.\n- Straf politikker for gentagne overtr\u0000c6delser.\n\nF\u0000c6lg med for opdateringer!\n\nHar du brug for mere hj\u0000c6lp? Tak fordi du bruger Modify! Lad os skabe et sikkert community sammen.\n\n\u001fKommando: /purge\nBrug denne kommando til at slette beskeder massivt i en kanal. Du kan angive antallet af beskeder, der skal slettes (1-100), filtrere efter indhold, bruger, beskeder fra apps eller beskeder med indlejrede elementer.\n\n\u001fS\u0000c6t /purge:\n- `/purge amount:<nummer>` - Sletter op til 100 nylige beskeder.\n- Valgfrit: Tilf\u0000f8j filtre som `contains:<tekst>`, `user:<bruger>`, `apps:true` eller `embeds:true` for at m\u0000c5lrette specifikke beskeder.\n- Du skal have 'administrer beskeder' tilladelse for at bruge denne kommando.\n",
+    "help": "\u000d83e\u000dd16 **Modify Hj\u0000e6lpeguide**\n\nModify er her for at holde din Discord-server sikker! Her er hvordan du kommer i gang:\n\n\u001f517 **Supportserver:** [Deltag i Modify Support Server](https://discord.gg/vYuTwaZ999)\n\n\u001f50b **Kommando: \\/log_channel**\nBrug denne kommando til at angive en kanal, hvor Modify sender advarsler for beskeder, der er markeret for at indeholde hadtale, trusler, chikane, selvskade, seksuelt indhold eller vold.\n\n**Ops\u0000e6t din Log Kanal:**\n1. Opret en ny kanal (eller v\u0000e6lg en eksisterende) til Modify-advarsler.\n2. Sørg for, at Modify har tilladelse til at sende beskeder der.\n3. Indtast `\\/log_channel` i den valgte kanal for at s\u0000e6tte den som din log kanal.\n\n\u0002728 Det var det! Modify vil nu sende notifikationer til din log kanal, hvis en besked bliver markeret. Husk, du skal have 'administrer server' tilladelse for at s\u0000e6tte log kanal.\n\n\u001f680 *Fremtidige planer:*\n- Tilpassede tærskelniveauer for indholdskategorier.\n- Skr\u0000e6ddersyede retningslinjer for forskellige kanaler og roller.\n- Straffepolitikker for gentagne overtr\u0000e6delser.\n\nF\u0000f8lg med for opdateringer!\n\nBrug for mere hj\u0000e6lp? **Tak fordi du bruger Modify! Lad os skabe et sikkert fællesskab sammen.**\n\n\u001f9f9\u0000b0 **Kommando: /purge**\nBrug denne kommando til at slette mange beskeder i en kanal. Du kan angive antal beskeder, der skal slettes (1-100), filtrere efter indhold, bruger, beskeder fra apps eller beskeder med embeds.\n\n**S\u0000e5dan bruger du /purge:**\n- `/purge amount:<antal>` — Slet op til 100 seneste beskeder.\n- Valgfrit: Tilf\u0000f8j filtre som `contains:<tekst>`, `user:<bruger>`, `apps:true`, eller `embeds:true` for at m\u0000e5lrette specifikke beskeder.\n- Du skal have 'administrer beskeder' tilladelse for at bruge denne kommando.\n",
     "log_channel_confirm": "Log kanal sat til",
-    "log_channel_admin_only": "Beklager, men denne kommando er kun for administratorer.",
-    "log_channel_error": "Beklager, men noget gik galt hos os. Pr\u0000f8v igen senere.",
+    "log_channel_admin_only": "Jeg er ked af det, men denne kommando er kun for administratorer.",
+    "log_channel_error": "Jeg er ked af det, men noget gik galt. Prøv igen senere.",
     "categories": {
         "sexual": "Seksuelt",
-        "sexual/minors": "Seksuelt/B\u0000f8rn",
+        "sexual/minors": "Seksuelt/Mindre\u0000e5rige",
         "harassment": "Chikane",
         "harassment/threatening": "Chikane/Truende",
         "hate": "Had",
         "hate/threatening": "Had/Truende",
-        "illicit": "Ulovligt",
-        "illicit/violent": "Ul\u0000f8vligt/Voldeligt",
+        "illicit": "Ul\u0000e6ngdeligt",
+        "illicit/violent": "Ul\u0000e6ngdeligt/Voldeligt",
         "self-harm": "Selvskade",
         "self-harm/intent": "Selvskade/Hensigt",
         "self-harm/instructions": "Selvskade/Instruktioner",
         "violence": "Vold",
         "violence/graphic": "Vold/Grafisk"
     },
-    "purge_app_permission_missing": "App'en mangler tilladelsen administrer beskeder.",
-    "purge_user_permission_missing": "Bruger mangler tilladelsen administrer beskeder.",
-    "purge_invalid_amount": "Ugyldigt ant\u0000e6l for sletning. Skal v\u0000e6re mellem 1 og 100.",
+    "purge_app_permission_missing": "App mangler tilladelsen til at administrere beskeder.",
+    "purge_user_permission_missing": "Bruger mangler tilladelsen til at administrere beskeder.",
+    "purge_invalid_amount": "Ugyldigt antal til oprydning. Skal v\u0000e6re mellem 1 og 100.",
     "purge_no_messages": "Ingen beskeder at slette.",
-    "purge_success": "Slettet beskeder: ",
-    "evaluate_error": "Ingen beskeder eller billeder at evaluere."
+    "purge_success": "Slettede beskeder: ",
+    "evaluate_error": "Ingen beskeder eller billeder til evaluering."
 }

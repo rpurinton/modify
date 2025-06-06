@@ -1,17 +1,17 @@
 {
-    "help": "\u000au00f0\u00009f\u000091\u0000be **Guide d'aide Modify**\n\nModify est l\u0000e0 pour garder votre serveur Discord en s\u0000e9curit\u0000e9 ! Voici comment commencer :\n\n\u0000f0\u00009f\u000094\u000097 **Serveur de support :** [Rejoignez le serveur de support Modify](https://discord.gg/vYuTwaZ999)\n\n\u0000f0\u000093\u0000a1 **Commande : /log_channel**\nUtilisez cette commande pour d\u0000e9signer un canal o\u0000f9 Modify enverra des alertes pour les messages signal\u0000e9s contenant des discours de haine, menaces, harc\u0000e8lement, automutilation, contenu sexuel ou violence.\n\n**Configurer votre canal de journal :**\n1. Cr\u0000e9ez un nouveau canal (ou choisissez-en un existant) pour les alertes Modify.\n2. Assurez-vous que Modify a la permission d\u0000e9 envoyer des messages l\u0000e0.\n3. Entrez `/log_channel` dans le canal d\u0000e9sign\u0000e9 pour le d\u0000e9finir comme votre canal de journal.\n\n\u0000e2\u00009c\u000088 C'est tout ! Modify enverra d\u0000e9sormais des notifications dans votre canal de journal si un message est signal\u0000e9. N'oubliez pas, vous devez avoir la permission g\u0000e9rer le serveur pour d\u0000e9finir le canal de journal.\n\n\u0000f0\u00009f\u000094\u0000a8 *Plans futurs :*\n- Niveaux de seuil personnalis\u0000e9s pour les cat\u0000e9gories de contenu.\n- Politiques adapt\u0000e9es pour diff\u0000e9rents canaux et r\u0000f4les.\n- Politiques de sanction pour violations r\u0000e9p\u0000e9t\u0000e9es.\n\nRestez \u0000e0 l'\u0000e9coute pour les mises \u0000e0 jour !\n\nBesoin d\u0000e9plus d'aide ? **Merci d'utiliser Modify ! Cr\u0000e9ons une communaut\u0000e9 s\u0000fbre ensemble.**\n\n\u0000f0\u00009f\u000097\u000085 **Commande : /purge**\nUtilisez cette commande pour supprimer en masse des messages dans un canal. Vous pouvez sp\u0000e9cifier le nombre de messages \u0000e0 supprimer (1-100), filtrer par contenu, utilisateur, messages d'applications ou messages contenant des int\u0000e9grations.\n\n**Comment utiliser /purge :**\n- `/purge amount:<number>` \u000096 Supprimez jusqu'\u0000e0 100 messages r\u0000e9cents.\n- Optionnel : ajoutez des filtres comme `contains:<text>`, `user:<user>`, `apps:true`, ou `embeds:true` pour cibler des messages sp\u0000e9cifiques.\n- Vous devez avoir la permission g\u0000e9rer les messages pour utiliser cette commande.\n",
-    "log_channel_confirm": "Canal de journal d\u0000e9fini sur",
-    "log_channel_admin_only": "D\u0000e9sol\u0000e9, mais cette commande est r\u0000e9serv\u0000e9e aux administrateurs uniquement.",
+    "help": "\u0002916 **Guide d'aide de Modify**\n\nModify est l\u0000e0 pour garder votre serveur Discord s\u0000fbr ! Voici comment commencer :\n\n\u001f517 **Serveur de support :** [Rejoignez le serveur de support Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f511 **Commande : \\/log_channel**\nUtilisez cette commande pour d\u0000e9finir un canal o\u0000f9 Modify enverra les alertes pour les messages signal\u0000e9s contenant des discours de haine, menaces, harc\u0000e8lement, automutilation, contenu sexuel ou violence.\n\n**Configurer votre canal de journalisation :**\n1. Cr\u0000e9ez un nouveau canal (ou choisissez-en un existant) pour les alertes Modify.\n2. Assurez-vous que Modify a la permission d\u0000e9 envoyer des messages l\u0000e0.\n3. Entrez `\\/log_channel` dans le canal d\u0000e9sign\u0000e9 pour le d\u0000e9finir comme canal de journalisation.\n\n\u0002728; C'est tout ! Modify enverra d\u0000e9sormais des notifications \u0000e0 votre canal de journalisation si un message est signal\u0000e9. Rappelez-vous, vous devez avoir la permission 'g\u0000e9rer le serveur' pour d\u0000e9finir le canal de journalisation.\n\n\u001f680 *Plans futurs :*\n- Niveaux de seuil personnalis\u0000e9s pour les cat\u0000e9gories de contenu.\n- Politiques adapt\u0000e9es pour diff\u0000e9rents canaux et r\u0000f4les.\n- Politiques de sanction pour les violations r\u0000e9p\u0000e9t\u0000e9es.\n\nRestez \u0000e0 l'\u0000e9coute pour les mises \u0000e0 jour !\n\nBesoin de plus d'aide ? **Merci d'utiliser Modify ! Cr\u0000e9ons ensemble une communaut\u0000e9 s\u0000fbre.**\n\n\u001f9f9 **Commande : /purge**\nUtilisez cette commande pour supprimer en masse des messages dans un canal. Vous pouvez sp\u0000e9cifier le nombre de messages \u0000e0 supprimer (1-100), filtrer par contenu, utilisateur, messages d'applications, ou messages contenant des embeds.\n\n**Comment utiliser /purge :**\n- `/purge amount:<nombre>` — Supprime jusqu'\u0000e0 100 messages r\u0000e9cents.\n- Optionnel : Ajoutez des filtres comme `contains:<texte>`, `user:<utilisateur>`, `apps:true` ou `embeds:true` pour cibler des messages sp\u0000e9cifiques.\n- Vous devez avoir la permission 'g\u0000e9rer les messages' pour utiliser cette commande.\n",
+    "log_channel_confirm": "Canal de journalisation d\u0000e9fini sur",
+    "log_channel_admin_only": "D\u0000e9sol\u0000e9, mais cette commande est r\u0000e9serv\u0000e9e aux administrateurs seulement.",
     "log_channel_error": "D\u0000e9sol\u0000e9, mais une erreur est survenue de notre c\u0000f4t\u0000e9. Veuillez r\u0000e9essayer plus tard.",
     "categories": {
         "sexual": "Sexuel",
         "sexual/minors": "Sexuel/Mineurs",
         "harassment": "Harc\u0000e8lement",
-        "harassment/threatening": "Harc\u0000e8lement/mena\u0000e7ant",
+        "harassment/threatening": "Harc\u0000e8lement/Hostile",
         "hate": "Haine",
-        "hate/threatening": "Haine/mena\u0000e7ant",
+        "hate/threatening": "Haine/Hostile",
         "illicit": "Illicite",
-        "illicit/violent": "Illicite/violent",
+        "illicit/violent": "Illicite/Violent",
         "self-harm": "Automutilation",
         "self-harm/intent": "Automutilation/Intention",
         "self-harm/instructions": "Automutilation/Instructions",
@@ -21,7 +21,7 @@
     "purge_app_permission_missing": "L'application n'a pas la permission de g\u0000e9rer les messages.",
     "purge_user_permission_missing": "L'utilisateur n'a pas la permission de g\u0000e9rer les messages.",
     "purge_invalid_amount": "Quantit\u0000e9 de purge invalide. Doit \u0000eatre entre 1 et 100.",
-    "purge_no_messages": "Aucun message \u0000supprimer.",
-    "purge_success": "Messages purg\u0000e9s : ",
-    "evaluate_error": "Aucun message ou image \u0000\u0000valuer."
+    "purge_no_messages": "Aucun message \u0000e0 supprimer.",
+    "purge_success": "Messages supprim\u0000e9s : ",
+    "evaluate_error": "Aucun message ou image \u0000e0 \u0000e9valuer."
 }

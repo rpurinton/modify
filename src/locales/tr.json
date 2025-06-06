@@ -1,27 +1,27 @@
 {
-    "help": "\u00130 **Modify Yard\u00131 m K\u00131 Rehberi**\n\nModify, Discord sunucunuzun g\u00131venli\u00131ini sa\u00131lamak i\u00131cin burada! \u00130nas\u00131l ba\u00131lan\u00131r\u00131m?\n\n\u00128\u00135 **Destek Sunucusu:** [Modify Destek Sunucusuna Kat\u00131l\u00131n](https://discord.gg/vYuTwaZ999)\n\n\u001f512 **Komut: /log_channel**\nBu komutu, nefret söylemi, tehdit, taciz, kendine zarar verme, cinsel i\u00131\u00131erik veya \u00130\u00131iddet i\u00131\u00131eren mesajlar i\u00131\u00131\u00131in Modify'nin uyar\u00131lar\u00131n\u00131 g\u00131nderece\u00121i bir kanal belirlemek i\u00131in kullan\u00131n.\n\n**Log Kanal\u00131n\u00131 Ayarlama:**\n1. Modify uyar\u00131lar\u00131 i\u00131cin yeni bir kanal olu\u00131turun (ya da var olan birini se\u00131in).\n2. Modify'nin oraya mesaj g\u00131nderebilme yetkisine sahip oldu\u00121undan emin olun.\n3. Se\u00131tikleri kanalda `/log_channel` yaz\u00131n ve log kanallar\u00131 olarak ayarlay\u00131n.\n\n\u001276 Bu kadar! Modify, fl\u00131glenen mesajlar i\u00131in bildirimi log kanal\u00131n\u00131za g\u00131nderecek.  Log kanallar\u00131n\u00131 ayarlamak i\u00131\u00131in \"sunucuyu y\u00131net\" yetkisine sahip olman\u00131z gerekiyor.\n\n\u00128\u00136 *Gelecekteki Planlar:*\n- \u00130zel i\u00131\u00131erik kategorileri e\u00131i\u00131im seviyesi.\n- Farkl\u00131 kanallar ve roller i\u00131in \u00130zel politika tan\u00131mlamalar\u00131.\n- Tekrar eden ihlaller i\u00131in cezaland\u00131rma politikalari.\n\nG\u00131ncel kal\u00131n!\n\nDaha fazla yard\u00131m i\u00131\u00131in? **Modify'i kullan\u00131d\u00131\u00131n\u00131z i\u00131\u00131in te\u00131ekk\u00131r ederiz! Hadi birlikte g\u00131venli bir topluluk olu\u00131tural\u00131m.**\n\n\u001f9f9 **Komut: /purge**\nBu komut ile kanaldaki mesajlar\u00131 toplu olarak silebilirsiniz. 1-100 aras\u00131nda mesaj say\u00131s\u00131 belirleyebilir, i\u00131\u00131erik, kullan\u00131c\u00131, uygulamalardan gelen mesajlar veya embed i\u00131\u00131eren mesajlar a\u00131r\u00131tirmas\u00131 yapabilirsiniz.\n\n**/purge Nas\u00131l Kullan\u00131l\u00131r:**\n- `/purge amount:<sayi>` — Son 100 mesaja kadar s\u00131lme.\n- Opsiyonel: `contains:<yaz\u00131>` , `user:<kullan\u00131c\u00131>`, `apps:true` ya da `embeds:true` filtreleri ile belirli mesajlar hedeflenebilir.\n- Bu komutu kullanmak i\u00131\u00131in 'mesajlar\u00131 yo\u00131et' yetkinizin olmas\u00131 gerekiyor.\n",
+    "help": "\u000d83e\u000dd16 **Modify Yard\u000131m Rehberi**\n\nModify, Discord sunucunuzun g\u0000fczdel\u000131\u00011fini korumak i\u0000e7in burada! Ba\u00015flarken \u00015fu ad\u000131mlar\u000131 izleyin:\n\n\u001f\u0016\u001d\u001f **Destek Sunucusu:** [Modify Destek Sunucusuna Kat\u000131l\u000131n](https://discord.gg/vYuTwaZ999)\n\n\u0000d83d\u0000dd11 **Komut: \\/log_channel**\nBu komutla, Modify'nin nefret s\u0000f6ylemi, tehditler, taciz, \u0000f6z-k\u0000e7\u000131k\u000131m, cinsel i\u0000e7erik veya \u00015fiddet i\u0000e7eren iletileri tespit etti\u00011fi zaman uyar\u000131 g\u0000f6nderece\u00011fi kanal\u000131 belirlersiniz.\n\n**Log Kanal\u000131n\u000131 Ayarlama:**\n1. Modify uyar\u000131lar\u000131 i\u0000e7in yeni bir kanal olu\u00015fturun veya mevcut kanallardan birini se\u0000e7in.\n2. Modify'nin bu kanala mesaj g\u0000f6nderebilmesi i\u0000e7in izinleri olduğundan emin olun.\n3. Belirlenen kanalda `\\/log_channel` yaz\u000131n ve o kanal\u000131 log kanalı olarak ayarlam\u000131\u00015 olun.\n\n\u000178\u000131\u00015f\u000131\u00011f\u000131! Modify Art\u000131k iletiler tespit edildi\u00011finde log kanal\u000131na bildirim g\u0000f6nderecek. Log kanal\u000131 ayarlamak i\u0000e7in sunucu y\u0000f6netme iznine sahip olman\u000131z gerekir.\n\n\u0000d83d\u0000de80 *Gelecek Planlar:*\n- \u000130\u0000e7erik kategorileri i\u0000e7in \u0000f6zel e\u00015fitlik d\u0000fczeyleri.\n- Farkl\u000131 kanal ve roller i\u0000e7in \u0000f6zelle\u00015ftirilmi\u00015 politikalar.\n- Tekrar eden ihlaller i\u0000e7in yapt\u000131r\u000131m politikalar\u000131.\n\nG\u0000fcncellemeler i\u0000e7in takipte kal\u000131n!\n\nDaha fazla yard\u000131ma m\u000131 ihtiyac\u000131n\u000131z var? **Modify'i kulland\u000131\u00011f\u000131n\u000131z i\u0000e7in te\u00015fekk\u0000fcr ederiz! G\u0000fczel bir topluluk olu\u00015ftural\u000131m.**\n\n\u0000f0\u0009b\u000088 **Komut: \\/purge**\nBu komutla bir kanaldaki iletileri topluca silebilirsiniz. 1-100 aras\u000131nda iletiler say\u000131s\u000131n\u000131 belirtebilir, i\u0000e7erik, kullan\u000131c\u000131, uygulamalardan gelen veya embed i\u0000e7eren iletiler gibi filtreler ekleyebilirsiniz.\n\n**\\/purge Nas\u000131l Kullan\u000131l\u000131r:**\n- `/purge amount:<number>` — Son 100 iletiden kadar siler.\n- Opsiyonel: Belirli iletileri hedeflemek i\u0000e7in `contains:<text>`, `user:<user>`, `apps:true` veya `embeds:true` filtrelerini ekleyin.\n- Bu komutu kullanmak i\u0000e7in 'mesajlar\u000131 y\u0000f6net' iznine sahip olmal\u000131s\u000131n\u000131z.\n",
     "log_channel_confirm": "Log kanalı olarak ayarlandı",
-    "log_channel_admin_only": "\u00130z\u00131r dilerim, bu komut sadece y\u00131netici i\u00131\u00131in kullan\u00131labilir.",
-    "log_channel_error": "\u00130z\u00131r dilerim, b\u00131zden kaynaklanan bir sorun oldu. L\u00125tfen daha sonra tekrar deneyin.",
+    "log_channel_admin_only": "\u0000dczg\u0000fcn\u0000fcm, bu komut sadece y\u0000f6neticiler i\u0000e7indir.",
+    "log_channel_error": "\u0000dczg\u0000fcn\u0000fcm, i\u00015flem s\u000131ras\u000131nda bir hata olu\u00015ftu. L\u0000fctfen daha sonra tekrar deneyin.",
     "categories": {
         "sexual": "Cinsel",
-        "sexual/minors": "Cinsel/Re\u00131smi Ya\u00131n Alt\u00131nda",
+        "sexual/minors": "Cinsel/Re\u00015fit Olmayanlar",
         "harassment": "Taciz",
         "harassment/threatening": "Taciz/Tehdit",
         "hate": "Nefret",
         "hate/threatening": "Nefret/Tehdit",
-        "illicit": "Yasad\u00131\u00130",
-        "illicit/violent": "Yasad\u00131\u00130/\u00130iddetli",
+        "illicit": "\u000130llegal",
+        "illicit/violent": "\u000130llegal/\u00015fiddet",
         "self-harm": "Kendine Zarar",
         "self-harm/intent": "Kendine Zarar/Niyet",
-        "self-harm/instructions": "Kendine Zarar/Talimatlar",
-        "violence": "\u00130iddet",
-        "violence/graphic": "\u00130iddet/Grafik"
+        "self-harm/instructions": "Kendine Zarar/ Talimatlar",
+        "violence": "\u00015eiddet",
+        "violence/graphic": "\u00015eiddet/Detayl\u000131"
     },
-    "purge_app_permission_missing": "Uygulaman\u00131n mesajlar\u00131 y\u00131netme yetkisi yok.",
-    "purge_user_permission_missing": "Kullan\u00131c\u00131n\u00131n mesajlar\u00131 y\u00131netme yetkisi yok.",
-    "purge_invalid_amount": "Ge\u00131ersiz temizleme say\u00131s\u00131. 1 ile 100 aras\u00131nda olmal\u00131.",
-    "purge_no_messages": "Silinecek mesaj bulunamad\u00131.",
-    "purge_success": "Temizlenen mesajlar: ",
-    "evaluate_error": "De\u00131erlendirilecek mesaj ya da g\u00131rsel yok."
+    "purge_app_permission_missing": "Uygulaman\u000131n mesajlar\u000131 y\u0000f6netme izni eksik.",
+    "purge_user_permission_missing": "Kullan\u000131c\u000131n\u000131n mesajlar\u000131 y\u0000f6netme izni yok.",
+    "purge_invalid_amount": "Ge\u0000e7ersiz silme miktar\u000131. 1 ile 100 aras\u000131nda olmal\u000131.",
+    "purge_no_messages": "Silinecek ileti bulunamad\u000131.",
+    "purge_success": "Silinen iletiler: ",
+    "evaluate_error": "De\u00011ferlendirilecek ileti veya resim yok."
 }

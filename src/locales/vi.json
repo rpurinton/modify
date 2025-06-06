@@ -1,27 +1,16 @@
 {
-  "help": "🤖 **Hướng dẫn trợ giúp Modify**\n\nModify ở đây để giữ an toàn cho máy chủ Discord của bạn! Đây là cách bắt đầu:\n\n🔑 **Lệnh: /log_channel**\nSử dụng lệnh này để chỉ định một kênh mà Modify sẽ gửi cảnh báo cho các tin nhắn bị đánh dấu vì có ngôn từ kích động thù địch, đe dọa, quấy rối, tự làm hại, nội dung tình dục hoặc bạo lực.\n\n**Cài đặt kênh nhật ký của bạn:**\n1. Tạo một kênh mới (hoặc chọn một kênh hiện có) cho các cảnh báo của Modify.\n2. Đảm bảo Modify có quyền gửi tin nhắn ở đó.\n3. Nhập `/log_channel` trong kênh được chỉ định để đặt làm kênh nhật ký của bạn.\n\n✨ Hoàn tất! Modify sẽ gửi thông báo đến kênh nhật ký của bạn nếu một tin nhắn bị đánh dấu. Hãy nhớ rằng bạn cần có quyền 'quản lý máy chủ' để thiết lập kênh nhật ký.\n\n🚀 *Kế hoạch tương lai:*\n- Các mức ngưỡng tùy chỉnh cho các danh mục nội dung.\n- Chính sách tùy chỉnh cho các kênh và vai trò khác nhau.\n- Chính sách hình phạt cho các vi phạm lặp lại.\n\nHãy theo dõi các cập nhật!\n\nCần thêm trợ giúp? **Cảm ơn bạn đã sử dụng Modify! Hãy cùng nhau xây dựng một cộng đồng an toàn.**\n\n🧹 **Lệnh: /purge**\nSử dụng lệnh này để xóa hàng loạt tin nhắn trong một kênh. Bạn có thể chỉ định số lượng tin nhắn cần xóa (1-100), lọc theo nội dung, người dùng, tin nhắn từ ứng dụng hoặc tin nhắn có nhúng.\n\n**Cách sử dụng /purge:**\n- `/purge amount:<number>` — Xóa tối đa 100 tin nhắn gần đây nhất.\n- Tùy chọn: Thêm các bộ lọc như `contains:<text>`, `user:<user>`, `apps:true` hoặc `embeds:true` để nhắm mục tiêu tin nhắn cụ thể.\n- Bạn cần có quyền 'quản lý tin nhắn' để sử dụng lệnh này.",
-  "log_channel_confirm": "Kênh nhật ký được đặt thành",
-  "log_channel_admin_only": "Xin lỗi, lệnh này chỉ dành cho quản trị viên.",
-  "log_channel_error": "Xin lỗi, đã xảy ra lỗi. Vui lòng thử lại sau.",
-  "categories": {
-    "sexual": "Nội dung tình dục",
-    "sexual/minors": "Nội dung tình dục/Trẻ vị thành niên",
-    "harassment": "Quấy rối",
-    "harassment/threatening": "Quấy rối/Đe dọa",
-    "hate": "Thù hận",
-    "hate/threatening": "Thù hận/Đe dọa",
-    "illicit": "Bất hợp pháp",
-    "illicit/violent": "Bất hợp pháp/Bạo lực",
-    "self-harm": "Tự làm hại",
-    "self-harm/intent": "Tự làm hại/Ý định",
-    "self-harm/instructions": "Tự làm hại/Hướng dẫn",
-    "violence": "Bạo lực",
-    "violence/graphic": "Bạo lực/Đồ họa"
-  },
-  "purge_app_permission_missing": "Ứng dụng không có quyền quản lý tin nhắn.",
-  "purge_user_permission_missing": "Người dùng không có quyền quản lý tin nhắn.",
-  "purge_invalid_amount": "Số lượng xóa không hợp lệ. Phải nằm trong khoảng từ 1 đến 100.",
-  "purge_no_messages": "Không có tin nhắn nào để xóa.",
-  "purge_success": "Số tin nhắn đã xóa: ",
-  "evaluate_error": "Không có tin nhắn hoặc hình ảnh để đánh giá."
-}
+    "help": "\u001306e \u00130d\u00103 \u001306\u0012d\u00132\u0013a \u00130e\u00129\u0011 \u001307\u00129\u00120 \u00131\u00121\u0012c \u00133\u0012b\u0012d!\n\n\u001f517 **H\u0012e\u00122 Server H\u001307tr\u001307:** [Tham gia Server H\u001307tr\u001307 Modify](https://discord.gg/vYuTwaZ999)\n\n\u001f514 **L\u00131nh: \\/log_channel**\nS\u001eed d\u001eedch l\u00120n t\u00140n n\u00131 cho Modify g\u001ebn th\u00142ng b\u001eb d\u001ebc khi c\u001ebn b\u001ebn tin c\u001eed ch\u001ebc h\u001ee c\u001ebn ph\u001ebp gh\u001ee c\u001ebn h\u001ee, uy hi\u001ee m\u001eaf, qu\u001ebc ti\u001eedp, t\u00120n t\u00131c b\u001ebn, t\u00120n t\u00131c t\u001ee, ho\u001eb cn\u001ea.\n\n**Thi\u001ebt l\u001ebp K\u00131nh ghi nh\u001ebm c\u001eea b\u001ebn tin:**\n1. T\u001ea m\u001ebt k\u00131nh m\u001ed\u001ba (ho\u001ea c\u001ee ch\u001bca m\u001ed\u001ba) cho c\u001eea b\u001ebn tin Modify.\n2. \u001301m b\u001ebn tin c\u001edc th\u001ee s\u001eed d\u001eedch g\u001ebn t\u001ebm t\u00120i \u00131\u00132n.\n3. Nh\u001eadp `\\/log_channel` trong k\u00131n h\u00131i \u00131\u00132n \u001ee \u00131\u001ebt l\u001ebp l\u001b0\u001ea ch\u001bca ghi nh\u001ebm.\n\n\u001f484 \u001309\u00120! Modify s\u001eed g\u001ebn th\u00142ng b\u001ebn tin n\u00131 k\u00131nh ghi nh\u001ebm n\u001ebu c\u001ebn b\u001ebn tin \u00131\u001ebf bi\u001ebc. L\u001ebn vui l\u001ed3ng c\u001ee quy\u001ebn 'qu\u001ea l\u00121nh server' \u00131\u00132n s\u001eed d\u001eedch ch\u001bca l\u001ebp k\u00131nh ghi nh\u001ebm.\n\n\u001f680 *K\u00121t ho\u001ea l\u001eb7p:*\n- M\u001ebt ch\u001eef m\u001ebt ng\u001eef ch\u001eed chi\u001ebt cho c\u001ebn n\u001ebu c\u001ebn b\u001ebn tin\n- Ch\u001eef ch\u001eef \u00131\u00132n ph\u001eep r\u001ea c\u001eea c\u001ebn n\u001ebu t\u00140ng k\u00131nh v\u001eada v\u0000e0 vai tr\u001ee\n- Ch\u001eef c\u001ebn ph\u001eep h\u001eadnh \u00131\u001ebf cho vi ph\u001ea vi p\u001eed l\u001ebp n\u001ebu t\u00140i ti\u00131p\n\nH\u001eed d\u001eed l\u001ebp m\u001eadt t\u001ee!\n\nC\u001eb7n th\u001ee h\u001eadp? **C\u001eaf \u00131\u001ebf d\u0000f9ng Modify! H\u001ea c\u00131t l\u00121nh c\u001ea chung ta.**\n\n\u001f9f9 **L\u00131nh: /purge**\nD\u001eedch l\u001ebp thao t\u00132t b\u001ebn tin trong k\u00131n h\u00131i. B\u001ebn tin c\u001ee ph\u001ead t\u00121t 1-100, l\u001eb7p l\u001eadp theo n\u001eddi dung, ng\u001eef d\u001eedch, t\u00120n t\u00131c t\u001ee, ho\u001ea t\u00120n t\u00131c c\u001edc nh\u001ebm.\n\n**C\u001ea d\u001eedng /purge:**\n- `/purge amount:<s\u001ed\u00131 l\u001ebn>` \u00130\u001eb x\u001edd t\u001ebm 100 tin nh\u001ebn g\u001edd nh\u001ebt nh\u001ebt.\n- C\u001eaf t\u00131u ch\u001eef: Th\u001eef d\u001eedng nhu `contains:<v\u001eadt t\u00131>`, `user:<ng\u001eef d\u001eedng>`, `apps:true`, ho\u001ea `embeds:true` \u00130\u001eb th\u001edng tin c\u001ee ch\u001bca nh\u001ebt.\n- L\u001ebn vui l\u001ed3ng c\u001ee quy\u001ebn 'qu\u001ea tin nh\u001ebn' \u00131\u00132n d\u001eedch l\u001ebp.\n",
+    "log_channel_confirm": "K\u00131n h\u00131i ghi nh\u001ebm \u00131\u001ebf bi\u001ebc t\u00132",
+    "log_channel_admin_only": "Xin l\u001eei, l\u001ebn vui l\u001ed3ng l\u000e0 qu\u001ea tr\u001eef tr\u001ee vi\u001ec n\u001ebu ch\u001e1n d\u001eedch n\u001ebu l\u000e0 qu\u001ea tr\u001eef ban qu\u001ea tr\u001eef.",
+    "log_channel_error": "Xin l\u001eei, \u001301i \u00130gi \u001ef\u001ea \u001300i v\u001eada ch\u001ebn ch\u001e1n. L\u001ebn vui l\u001ed3ng th\u001eed l\u001eed d\u001eedng sau.",
+    "categories": {
+        "sexual": "T\u001edd c\u001eea t\u001ea d\u0000e2m",
+        "sexual/minors": "T\u001edd c\u001eea t\u001ea d\u0000e2m/Tr\u001ee em",
+        "harassment": "Qu\u001ebc ti\u001eedp",
+        "harassment/threatening": "Qu\u001ebc ti\u001eedp/D\u001ebb ho\u001ebp",
+        "hate": "Th\u001edch \u001306\u001ecd",
+        "hate/threatening": "Th\u001edch \u001306\u001ecd/D\u001ebb ho\u001ebp",
+        "illicit": "B\u001ebn v\u001ea",
+        "illicit/violent": "B\u001ebn v\u001ea/B\u001ebn v\u001ea",
+        "self-harm": "T\u001ed \u001b0\u001ebb t\u001ee",
+        "self-harm/intent": "T\u001ed \u001b

@@ -53,17 +53,11 @@ export default async function (interaction, injectedLog = log, injectedModerate 
                 })
                 .join("\n");
             results = results.trim();
-            let content;
-            if (type === 'text') {
-                content = `**Text Moderation:**\n${text ? text.substring(0, 300) : '(no text)'}\n${results}`;
-            } else if (type === 'image') {
-                content = `**Image Moderation:** [Image](${url})\n${results}`;
-            }
             if (first) {
-                await interaction.reply({ content, flags: 1 << 6 });
+                await interaction.reply({ results, flags: 1 << 6 });
                 first = false;
             } else {
-                await interaction.followUp({ content, flags: 1 << 6 });
+                await interaction.followUp({ results, flags: 1 << 6 });
             }
         }
     } catch (err) {

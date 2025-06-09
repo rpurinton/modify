@@ -72,14 +72,14 @@ export default async function (message, deps = {}) {
                     embed = new EmbedBuilder()
                         .setColor(0xED4245)
                         .setTitle(message.url + ` • <t:${Math.floor(Date.now() / 1000)}:R>`)
-                        .setDescription(`<@${message.author.id}>\n**Flagged Text:**\n${text ? text.substring(0, 300) : '(no text)'}\n${cats}`)
+                        .setDescription(`<@${message.author.id}>: ${text ? text.substring(0, 300) : '(no text)'}\n${cats}`)
                         .setTimestamp(message.createdAt)
                         .setFooter({ text: `User: ${message.author.tag} (${message.author.id})` });
                 } else if (type === 'image') {
                     embed = new EmbedBuilder()
                         .setColor(0xED4245)
                         .setTitle(message.url + ` • <t:${Math.floor(Date.now() / 1000)}:R>`)
-                        .setDescription(`<@${message.author.id}>\n**Flagged Image:**\n[Image](${url})\n${cats}`)
+                        .setDescription(`<@${message.author.id}>\n${cats}`)
                         .setImage(url)
                         .setTimestamp(message.createdAt)
                         .setFooter({ text: `User: ${message.author.tag} (${message.author.id})` });

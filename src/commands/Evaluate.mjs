@@ -53,11 +53,12 @@ export default async function (interaction, injectedLog = log, injectedModerate 
                 })
                 .join("\n");
             results = results.trim();
+            // Patch: reply expects { content } not { results }
             if (first) {
-                await interaction.reply({ results, flags: 1 << 6 });
+                await interaction.reply({ content: results, flags: 1 << 6 });
                 first = false;
             } else {
-                await interaction.followUp({ results, flags: 1 << 6 });
+                await interaction.followUp({ content: results, flags: 1 << 6 });
             }
         }
     } catch (err) {

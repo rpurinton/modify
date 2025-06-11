@@ -1,6 +1,6 @@
 {
     "name": "modify",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "type": "module",
     "description": "A modern Discord.js app using OpenAI Moderations Endpoint",
     "main": "modify.js",

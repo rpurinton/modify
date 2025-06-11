@@ -1,7 +1,7 @@
-import db from '../db.mjs';
+import dbPromise, { createDb } from '../db.mjs';
 import log from '../log.mjs';
 import { getMsg } from '../locales.mjs';
-export default async function (interaction, injectedDb = db, injectedLog = log) {
+export default async function (interaction, injectedDbPromise = dbPromise, injectedLog = log) {
     if (!interaction.memberPermissions.has('ManageGuild')) {
         injectedLog.warn('Log channel command invoked by non-admin user:', interaction.user && interaction.user.id);
         const msg = getMsg(interaction.locale, 'log_channel_admin_only', 'This command is for administrators only.', injectedLog);
@@ -15,6 +15,7 @@ export default async function (interaction, injectedDb = db, injectedLog = log) 
         return;
     }
     try {
+        const injectedDb = await injectedDbPromise;
         await injectedDb.execute(
             `INSERT INTO log_channels (guild_id, channel_id, guild_locale) VALUES (?, ?, ?)
              ON DUPLICATE KEY UPDATE channel_id = VALUES(channel_id), guild_locale = VALUES(guild_locale)`,
